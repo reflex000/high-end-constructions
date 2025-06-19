@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../public/logo.png';
 
 export default function HomePage() {
   return (
@@ -97,8 +98,9 @@ export default function HomePage() {
       <footer className="bg-zinc-900 text-zinc-200 py-10">
         <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row md:items-center md:justify-between gap-6 text-center md:text-left">
           <div>
-            <h3 className="text-xl font-bold mb-2 text-white">High End Constructions</h3>
-            <p>Serving Metro Vancouver & the Lower Mainland</p>
+            <img src={logo} alt="Logo" className="h-12 mb-4 mx-auto md:mx-0" />
+            <h3 className="text-xl font-bold mb-2 text-white">High End Constructions Ltd.</h3
+			<p>Unit 105 8028 128 Street<br />Surrey, BC V3W 4E9</p>
           </div>
           <div>
             <p>Call/Text: <a href="tel:+16045551234" className="underline">+1 604-555-1234</a></p>
