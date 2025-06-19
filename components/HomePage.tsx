@@ -1,16 +1,23 @@
 import React from 'react';
-import logo from '../public/logo.png';
 
 export default function HomePage() {
   return (
     <div className="bg-zinc-100 text-zinc-900 font-sans">
       {/* HERO */}
       <header className="relative h-[90vh] flex items-center justify-center text-center overflow-hidden">
+        {/* Background Image */}
         <img
           src="https://images.pexels.com/photos/11568645/pexels-photo-11568645.jpeg"
           alt="Pattullo Bridge"
           className="absolute inset-0 h-full w-full object-cover opacity-30"
         />
+
+        {/* Logo in Top-Left */}
+        <div className="absolute top-4 left-4 z-20">
+          <img src="/logo.png" alt="High End Constructions" className="h-14" />
+        </div>
+
+        {/* Headline Text */}
         <div className="relative z-10 max-w-4xl px-6">
           <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight drop-shadow-md">
             Precision Craftsmanship, Delivered On Time — Every Time.
@@ -47,7 +54,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* SOCIAL PROOF */}
+      {/* TESTIMONIALS */}
       <section className="bg-zinc-200 py-16" id="testimonials">
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl font-semibold text-center mb-10">What Clients Say</h2>
@@ -77,7 +84,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* URGENCY BANNER */}
+      {/* CTA */}
       <section className="bg-gradient-to-r from-amber-500 to-red-500 text-white py-8" id="cta">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">Only 3 Project Slots Left for Q3 Starts!</h2>
@@ -98,12 +105,12 @@ export default function HomePage() {
       <footer className="bg-zinc-900 text-zinc-200 py-10">
         <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row md:items-center md:justify-between gap-6 text-center md:text-left">
           <div>
-            <img src={logo} alt="Logo" className="h-12 mb-4 mx-auto md:mx-0" />
-            <h3 className="text-xl font-bold mb-2 text-white">High End Constructions Ltd.</h3
-			<p>Unit 105 8028 128 Street<br />Surrey, BC V3W 4E9</p>
+            <img src="/logo.png" alt="Logo" className="h-12 mb-4 mx-auto md:mx-0" />
+            <h3 className="text-xl font-bold mb-2 text-white">High End Constructions Ltd.</h3>
+            <p>Unit 105 8028 128 Street<br />Surrey, BC V3W 4E9</p>
           </div>
           <div>
-            <p>Call/Text: <a href="tel:+16045551234" className="underline">+1 604-555-1234</a></p>
+            <p>Call/Text: <a href="tel:+16049025879" className="underline">+1 (604) 902-5879</a></p>
             <p>Email: <a href="mailto:info@highendconstructions.ca" className="underline">info@highendconstructions.ca</a></p>
           </div>
           <div>
