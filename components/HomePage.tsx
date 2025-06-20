@@ -4,15 +4,21 @@ import Navbar from '../components/navbar';
 export default function HomePage() {
   return (
     <div className="bg-zinc-100 text-zinc-900 font-sans">
+      <Navbar />
 
       {/* HERO */}
       <header className="relative h-[90vh] flex items-center justify-center text-center overflow-hidden">
-        {/* Background Image */}
-        <img
-          src="https://images.pexels.com/photos/11568645/pexels-photo-11568645.jpeg"
-          alt="Pattullo Bridge"
-          className="absolute inset-0 h-full w-full object-cover opacity-30"
-        />
+        {/* Background Video */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover opacity-50"
+        >
+          <source src="/videos/hero.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
         {/* Logo in Top-Left */}
         <div className="absolute top-4 left-4 z-20">
@@ -21,13 +27,18 @@ export default function HomePage() {
 
         {/* Headline Text */}
         <div className="relative z-10 max-w-4xl px-6">
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight drop-shadow-md">
-            Precision Craftsmanship, Delivered On Time — Every Time.
+          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight drop-shadow-md text-white">
+            Building Excellence from Blueprint to Finish.
           </h1>
-          <p className="text-xl md:text-2xl mb-8">
-            From flawless drywall finishes to leak-proof plumbing, show-home flooring and showroom-ready painting, <strong>High End Constructions</strong> is your single, accountable partner for premium upgrades in Metro Vancouver.
+          <p className="text-xl md:text-2xl mb-8 text-white">
+            At <strong>High End Constructions</strong>, we specialize in delivering everything from leak-proof plumbing to luxury renovations—on time, on budget, and with zero compromise on craftsmanship.
           </p>
-          <a href="#cta" className="inline-block bg-black text-white px-10 py-4 rounded-lg text-lg hover:bg-zinc-800 transition">Book My Free Consultation</a>
+          <a
+            href="#cta"
+            className="inline-block bg-black text-white px-10 py-4 rounded-lg text-lg hover:bg-zinc-800 transition"
+          >
+            Book My Free Consultation
+          </a>
         </div>
       </header>
 
@@ -91,7 +102,12 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">Only 3 Project Slots Left for Q3 Starts!</h2>
           <p className="mb-6 text-lg">Reserve yours before <strong>July 31</strong> to lock in current pricing.</p>
-          <a href="mailto:info@highendconstructions.ca" className="inline-block bg-black/80 hover:bg-black transition px-10 py-4 rounded-lg text-lg">Schedule a Consultation</a>
+          <a
+            href="mailto:info@highendconstructions.ca"
+            className="inline-block bg-black/80 hover:bg-black transition px-10 py-4 rounded-lg text-lg"
+          >
+            Schedule a Consultation
+          </a>
         </div>
       </section>
 
