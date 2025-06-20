@@ -3,12 +3,14 @@ import Link from 'next/link';
 
 export default function Navbar() {
   return (
-    <nav className="bg-white shadow-md py-4 px-8 flex justify-center space-x-8 font-semibold text-zinc-800 uppercase text-sm tracking-wide">
-      <Link href="/" className="hover:text-amber-600 transition">Home</Link>
-      <Link href="/about" className="hover:text-amber-600 transition">About Us</Link>
-      <Link href="/services" className="hover:text-amber-600 transition">Services</Link>
-      <Link href="/gallery" className="hover:text-amber-600 transition">Gallery</Link>
-      <Link href="/contact" className="hover:text-amber-600 transition">Contact Us</Link>
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-sm
+                     text-white flex items-center justify-center
+                     py-4 px-6 space-x-8 text-sm tracking-wider font-semibold">
+      <Link href="/"        className="hover:text-amber-400">HOME</Link>
+      <Link href="/about"   className="hover:text-amber-400">ABOUT US</Link>
+      <Link href="/services"className="hover:text-amber-400">SERVICES</Link>
+      <Link href="/gallery" className="hover:text-amber-400">GALLERY</Link>
+      <Link href="/contact" className="hover:text-amber-400">CONTACT US</Link>
     </nav>
   );
 }

@@ -1,49 +1,56 @@
 import React from 'react';
-import Navbar from '../components/navbar'; // ✅ import the Navbar
+import Navbar from '../components/navbar';
 
 export default function ContactPage() {
   return (
     <>
       <Navbar />
-      <div
-        className="min-h-screen bg-cover bg-center flex items-center justify-center"
-        style={{
-          backgroundImage:
-            'url("https://images.pexels.com/photos/2092736/pexels-photo-2092736.jpeg")',
-        }}
-      >
-        <div className="bg-black bg-opacity-60 p-10 rounded-lg max-w-xl w-full text-white">
-          <h1 className="text-3xl font-bold mb-6">Get in touch with High End Constructions</h1>
-          <form className="space-y-4">
-            <input
-              type="text"
-              placeholder="Name"
-              className="w-full px-4 py-2 rounded text-black"
-            />
-            <input
-              type="email"
-              placeholder="Email address"
-              className="w-full px-4 py-2 rounded text-black"
-            />
-            <input
-              type="tel"
-              placeholder="Phone Number"
-              className="w-full px-4 py-2 rounded text-black"
-            />
-            <textarea
-              placeholder="Message"
-              rows={4}
-              className="w-full px-4 py-2 rounded text-black"
-            ></textarea>
-            <button
-              type="submit"
-              className="bg-white text-black font-bold px-6 py-2 rounded hover:bg-zinc-300 transition"
-            >
-              Submit
-            </button>
-          </form>
+
+      <main className="pt-24 pb-20 px-6 bg-gray-50 min-h-screen">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+          {/* ────── Form (left) ────── */}
+          <section>
+            <h1 className="text-3xl font-bold mb-6">Send Message</h1>
+
+            <form className="space-y-5">
+              <input  className="w-full border p-3 rounded" placeholder="Name" />
+              <input  className="w-full border p-3 rounded" placeholder="Email*" type="email" />
+              <input  className="w-full border p-3 rounded" placeholder="Phone" type="tel" />
+              <input  className="w-full border p-3 rounded" placeholder="Address (Street, City, Zip)" />
+              <textarea className="w-full border p-3 rounded" rows={4} placeholder="Message" />
+              <button className="bg-amber-600 text-white px-8 py-3 rounded hover:bg-amber-700 transition">
+                Send
+              </button>
+            </form>
+          </section>
+
+          {/* ────── Contact Info (right) ────── */}
+          <aside className="space-y-6">
+            {/* your logo */}
+            <img src="/logo.png" alt="High End Constructions" className="h-28 mb-4" />
+
+            <h2 className="text-2xl font-bold">Get a Free Quote</h2>
+            <p>
+              We strive to be in constant communication with our customers until the job is done.
+              For a free quote or special requests, just drop us a line.
+            </p>
+
+            <div className="font-medium space-y-2">
+              <p>High End Constructions Ltd.</p>
+              <p>Unit 105 8028 128 Street,<br/>Surrey, BC V3W 4E9</p>
+              <p>📞 +1 (604) 902-5879</p>
+              <p>✉️ info@highendconstructions.ca</p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold mb-1">Hours</h3>
+              <p>Mon – Fri: 8 am – 5 pm</p>
+              <p>Sat: 8 am – 1 pm</p>
+              <p>Sun: Closed</p>
+            </div>
+          </aside>
         </div>
-      </div>
+      </main>
     </>
   );
 }
