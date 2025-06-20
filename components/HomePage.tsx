@@ -4,7 +4,6 @@ import Navbar from '../components/navbar';
 export default function HomePage() {
   return (
     <div className="bg-zinc-100 text-zinc-900 font-sans">
-      <Navbar /> {/* Navigation Bar */}
 
       {/* HERO */}
       <header className="relative h-[90vh] flex items-center justify-center text-center overflow-hidden">
