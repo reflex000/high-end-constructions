@@ -21,8 +21,8 @@ export default function HomePage() {
         </video>
 
         {/* Logo */}
-        <div className="absolute top-4 left-4 z-20 bg-white/80 rounded-md px-2 py-1 shadow-md">
-          <img src="/logo.png" alt="High End Constructions" className="h-14" />
+        <div className="absolute top-4 left-6 z-50">
+          <img src="/logo.png" alt="High End Constructions" className="h-24 w-auto drop-shadow-x1" />
         </div>
 
         {/* Headline */}
