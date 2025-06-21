@@ -56,7 +56,7 @@ export default function HomePage() {
             ].map((svc, idx) => (
               <div
                 key={idx}
-                className="relative h-64 rounded overflow-hidden shadow-lg group bg-zinc-800"
+                className="relative h-80 rounded overflow-hidden shadow-lg group bg-zinc-800"
               >
                 <img
                   src={svc.img}
@@ -158,7 +158,7 @@ export default function HomePage() {
               href="mailto:info@highendconstructions.ca"
               className="inline-block bg-amber-500 hover:bg-amber-600 transition px-8 py-3 rounded-lg text-zinc-900 font-semibold"
             >
-              Get My Free Consultation
+              Free Consultation
             </a>
           </div>
         </div>
