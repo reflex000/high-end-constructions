@@ -12,7 +12,7 @@ export default function Navbar() {
         <img 
           src="/logo.png" 
           alt="High End Constructions Logo" 
-          className="w-20 h-20 mt-2" // <-- Adjust size and position
+          className="w-40 h-40 mt-2" // <-- Adjust size and position
         />
       </div>
 
