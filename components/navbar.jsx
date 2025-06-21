@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-black/30 backdrop-blur-md
                     text-black flex items-center justify-between
-                    py-3 px-6 text-sm tracking-wider font-semibold shadow-md">
+                    py-2 px-6 text-sm tracking-wider font-semibold shadow-md">
 
       {/* Left: Logo */}
       <div className="flex items-center">
