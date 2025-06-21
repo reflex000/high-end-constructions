@@ -20,11 +20,6 @@ export default function HomePage() {
           Your browser does not support the video tag.
         </video>
 
-        {/* Logo */}
-        <div className="absolute top-4 left-6 z-50">
-          <img src="/logo.png" alt="High End Constructions" className="h-24 w-auto drop-shadow-x1" />
-        </div>
-
         {/* Headline */}
         <div className="relative z-10 max-w-4xl px-6">
           <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight drop-shadow-md text-white">
