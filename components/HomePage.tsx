@@ -16,7 +16,7 @@ export default function HomePage() {
           muted
           loop
           playsInline
-          className="absolute inset-0 h-full w-full object-cover opacity-50"
+          className="absolute inset-0 h-full w-full object-cover"
         >
           <source src="/videos/hero2.mp4" type="video/mp4" />
           Your browser does not support the video tag.
