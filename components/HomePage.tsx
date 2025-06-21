@@ -94,7 +94,7 @@ export default function HomePage() {
                 “A leaking main line almost shut our café. High End fixed the
                 plumbing overnight and resurfaced the floor before opening.”
               </p>
-              <footer className="font-semibold">— Mark R., New Westminster</footer>
+              <footer className="font-semibold">— Sid, New Westminster</footer>
             </blockquote>
           </div>
         </div>
@@ -120,7 +120,7 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-semibold mb-4">100% Satisfaction Promise</h2>
           <p className="text-lg">
-            If any aspect of our workmanship fails within five years, we’ll fix it{' '}
+            If any aspect of our workmanship fails within 2 years, we’ll fix it{' '}
             <strong>free of charge — no questions asked.</strong>
           </p>
         </div>
@@ -128,9 +128,9 @@ export default function HomePage() {
 
       {/* ───────────────── FOOTER ───────────────── */}
       <footer className="bg-zinc-900 text-zinc-200 py-10">
-        <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row md:items-center md:justify-between gap-6 text-center md:text-left">
+        <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row md:items-start md:justify-between gap-6 text-center md:text-left">
           <div>
-            <img src="/logo.png" alt="Logo" className="h-12 mb-4 mx-auto md:mx-0" />
+            <img src="/logo.png" alt="Logo" className="w-40 h-40 mt-2 md:mx-0" />
             <h3 className="text-xl font-bold mb-2 text-white">
               High End Constructions Ltd.
             </h3>
@@ -138,20 +138,20 @@ export default function HomePage() {
               Unit 105 · 8028 128 Street<br />
               Surrey, BC V3W 4E9
             </p>
-          </div>
-          <div>
-            <p>
-              Call/Text:{' '}
-              <a href="tel:+16049025879" className="underline">
-                +1 (604) 902-5879
-              </a>
-            </p>
-            <p>
-              Email:{' '}
-              <a href="mailto:info@highendconstructions.ca" className="underline">
-                info@highendconstructions.ca
-              </a>
-            </p>
+            <div className="mt-4">
+              <p>
+                Call/Text:{' '}
+                <a href="tel:+16049025879" className="underline">
+                  +1 (604) 902-5879
+                </a>
+              </p>
+              <p>
+                Email:{' '}
+                <a href="mailto:info@highendconstructions.ca" className="underline">
+                  info@highendconstructions.ca
+                </a>
+              </p>
+            </div>
           </div>
           <div>
             <a
