@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ✨ Shiny shimmer effect for text */
+/* ✨ Shiny blue shimmer effect for text */
 @keyframes shimmer {
   0% {
     background-position: -500px 0;
@@ -13,7 +13,7 @@
 }
 
 .shimmer-effect {
-  background: linear-gradient(90deg, #000000 25%, #444 50%, #000000 75%);
+  background: linear-gradient(90deg, #0ea5e9 20%, #38bdf8 50%, #0ea5e9 80%);
   background-size: 1000px 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
