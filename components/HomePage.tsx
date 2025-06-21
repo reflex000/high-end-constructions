@@ -24,9 +24,8 @@ export default function HomePage() {
 
         {/* headline box */}
         <div className="relative z-10 max-w-4xl px-6">
-          <h1 className="mb-6 text-4xl md:text-6xl font-extrabold leading-tight drop-shadow relative shimmer-effect">
-            Building Excellence&nbsp;from&nbsp;Blueprint&nbsp;to&nbsp;Finish.
-            <span className="shimmer-black" />
+          <h1 className="mb-6 text-4xl md:text-6xl font-extrabold leading-tight text-black drop-shadow relative shimmer-effect">
+              Building Excellence from Blueprint to Finish.
           </h1>
 
           <p className="mb-8 text-xl text-white md:text-2xl">
