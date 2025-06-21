@@ -18,7 +18,7 @@ export default function HomePage() {
           playsInline
           className="absolute inset-0 h-full w-full object-cover opacity-50"
         >
-          <source src="/videos/hero.mp4" type="video/mp4" />
+          <source src="/videos/hero1.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
