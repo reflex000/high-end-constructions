@@ -1,73 +1,80 @@
+/*  components/HomePage.tsx  */
 import React from 'react';
 import Navbar from '../components/navbar';
 
 export default function HomePage() {
   return (
-    <div className="bg-zinc-100 text-zinc-900 font-sans">
-      {/* NAVBAR */}
+    <div className="bg-zinc-100 font-sans text-zinc-900">
+      {/* ─── NAVBAR ─── */}
       <Navbar />
 
-      {/* ─────────────────── HERO ─────────────────── */}
-      <header className="relative h-[90vh] flex items-center justify-center text-center overflow-hidden">
+      {/* ─── HERO ─── */}
+      <header className="relative flex h-[90vh] items-center justify-center overflow-hidden text-center">
         <video
           autoPlay
           muted
           loop
           playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-50"
+          className="absolute inset-0 h-full w-full object-cover opacity-50"
         >
           <source src="/videos/hero.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
-        {/* Headline */}
-        <div className="relative z-10 max-w-4xl px-6">
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight drop-shadow-md text-white">
+        <div className="relative z-10 mx-6 max-w-4xl">
+          <h1 className="mb-6 text-4xl font-extrabold leading-tight text-white drop-shadow md:text-6xl">
             Building Excellence from Blueprint to Finish.
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-white">
-            At <strong>High End Constructions</strong>, we deliver everything from
-            leak-proof plumbing to luxury renovations—on time, on budget, and
-            without compromise.
+
+          <p className="mb-8 text-xl text-white md:text-2xl">
+            At <strong>High End Constructions</strong> we deliver everything
+            from leak-proof plumbing to luxury renovations—on time, on budget,
+            and without compromise.
           </p>
+
           <a
             href="mailto:info@highendconstructions.ca"
-            className="inline-block bg-black text-white px-10 py-4 rounded-lg text-lg hover:bg-zinc-800 transition"
+            className="inline-block rounded-lg bg-black px-10 py-4 text-lg text-white transition hover:bg-zinc-800"
           >
             Get Free Quote
           </a>
         </div>
       </header>
 
-      {/* ──────────────── SERVICE TILE GRID ──────────────── */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12">
+      {/* ─── SERVICE TILES ─── */}
+      <section className="bg-white py-20">
+        <div className="mx-auto max-w-7xl px-6">
+          <h2 className="mb-12 text-center text-3xl font-semibold md:text-4xl">
             Our Core Services
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {[
               { title: 'Drywall', img: '/images/services/drywall.jpg' },
               { title: 'Painting', img: '/images/services/painting.jpg' },
               { title: 'Flooring', img: '/images/services/flooring.jpg' },
               { title: 'Cabinets', img: '/images/services/cabinets.jpg' },
-              { title: 'Finishing & Carpentry', img: '/images/services/finishingandcarpentry.jpg' },
-            ].map((svc, idx) => (
+              {
+                title: 'Finishing & Carpentry',
+                img: '/images/services/finishingandcarpentry.jpg',
+              },
+            ].map((svc) => (
               <div
-                key={idx}
-                className="relative h-80 rounded overflow-hidden shadow-lg group bg-zinc-800"
+                key={svc.title}
+                className="group relative h-96 overflow-hidden rounded-xl shadow-lg"
               >
                 <img
                   src={svc.img}
                   alt={svc.title}
-                  className="w-full h-full object-cover transform group-hover:scale-105 transition duration-300 ease-in-out"
+                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center p-6">
-                  <h3 className="text-2xl font-bold text-white mb-2 drop-shadow">
+
+                <div className="relative z-10 flex h-full flex-col items-center justify-center bg-black/45 p-6 text-center">
+                  <h3 className="mb-3 text-3xl font-bold text-white drop-shadow">
                     {svc.title}
                   </h3>
-                  <button className="border border-white text-white px-4 py-2 rounded hover:bg-white hover:text-black transition">
+
+                  <button className="rounded border-2 border-white px-5 py-2 text-white transition hover:bg-white hover:text-black">
                     View Details
                   </button>
                 </div>
@@ -77,20 +84,24 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ───────────────── TESTIMONIALS ───────────────── */}
-      <section className="bg-zinc-200 py-16" id="testimonials">
-        <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-3xl font-semibold text-center mb-10">What Clients Say</h2>
+      {/* ─── TESTIMONIALS ─── */}
+      <section id="testimonials" className="bg-zinc-200 py-16">
+        <div className="mx-auto max-w-5xl px-6">
+          <h2 className="mb-10 text-center text-3xl font-semibold">
+            What Clients Say
+          </h2>
+
           <div className="grid gap-8 md:grid-cols-2">
-            <blockquote className="bg-white p-6 rounded shadow">
-              <p className="italic mb-4">
+            <blockquote className="rounded bg-white p-6 shadow">
+              <p className="mb-4 italic">
                 “Their drywall and paint crews finished four days early, and the
                 quality was magazine-worthy. I won’t hire anyone else.”
               </p>
               <footer className="font-semibold">— Lisa T., Burnaby</footer>
             </blockquote>
-            <blockquote className="bg-white p-6 rounded shadow">
-              <p className="italic mb-4">
+
+            <blockquote className="rounded bg-white p-6 shadow">
+              <p className="mb-4 italic">
                 “A leaking main line almost shut our café. High End fixed the
                 plumbing overnight and resurfaced the floor before opening.”
               </p>
@@ -100,14 +111,18 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ───────────────── TRUST BAR ───────────────── */}
+      {/* ─── TRUST BAR ─── */}
       <section className="py-12">
-        <div className="max-w-6xl mx-auto px-6 text-center">
+        <div className="mx-auto max-w-6xl px-6 text-center">
           <div className="flex flex-wrap items-center justify-center gap-6 text-zinc-600">
-            <span className="text-xl font-semibold">4.9★ Google (120+ reviews)</span>
-            <span className="hidden sm:block h-6 w-px bg-zinc-300"></span>
-            <span className="text-xl font-semibold">Licensed & Insured · BC #7485632</span>
-            <span className="hidden sm:block h-6 w-px bg-zinc-300"></span>
+            <span className="text-xl font-semibold">
+              4.9★ Google (120+ reviews)
+            </span>
+            <span className="hidden h-6 w-px bg-zinc-300 sm:block" />
+            <span className="text-xl font-semibold">
+              Licensed & Insured · BC #7485632
+            </span>
+            <span className="hidden h-6 w-px bg-zinc-300 sm:block" />
             <span className="text-xl font-semibold">
               Member — Vancouver Home Builders Assoc.
             </span>
@@ -115,54 +130,69 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ───────────────── GUARANTEE ───────────────── */}
-      <section className="py-16 bg-zinc-100">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-semibold mb-4">100% Satisfaction Promise</h2>
+      {/* ─── GUARANTEE ─── */}
+      <section className="bg-zinc-100 py-16">
+        <div className="mx-auto max-w-4xl px-6 text-center">
+          <h2 className="mb-4 text-3xl font-semibold">
+            100% Satisfaction Promise
+          </h2>
           <p className="text-lg">
-            If any aspect of our workmanship fails within 2 years, we’ll fix it{' '}
-            <strong>free of charge — no questions asked.</strong>
+            If any aspect of our workmanship fails within two years, we’ll fix
+            it <strong>free of charge — no questions asked.</strong>
           </p>
         </div>
       </section>
 
-      {/* ───────────────── FOOTER ───────────────── */}
-      <footer className="bg-zinc-900 text-zinc-200 py-10">
-        <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row md:items-start md:justify-between gap-6 text-center md:text-left">
+      {/* ─── FOOTER ─── */}
+      <footer className="bg-zinc-900 py-10 text-zinc-200">
+        <div className="mx-auto flex max-w-6xl flex-col gap-6 px-6 text-center md:flex-row md:items-start md:justify-between md:text-left">
           <div>
-            <img src="/logo.png" alt="Logo" className="w-40 h-40 mt-2 md:mx-0" />
-            <h3 className="text-xl font-bold mb-2 text-white">
+            <img
+              src="/logo.png"
+              alt="High End Constructions logo"
+              className="mx-auto mt-2 w-40 md:mx-0"
+            />
+
+            <h3 className="mb-2 text-xl font-bold text-white">
               High End Constructions Ltd.
             </h3>
-            <p>
-              Unit 105 · 8028 128 Street<br />
+
+            <address className="not-italic">
+              Unit 105 · 8028 128 Street
+              <br />
               Surrey, BC V3W 4E9
-            </p>
-            <div className="mt-4">
+            </address>
+
+            <div className="mt-4 space-y-1">
               <p>
                 Call/Text:{' '}
-                <a href="tel:+16049025879" className="underline">
+                <a className="underline" href="tel:+16049025879">
                   +1 (604) 902-5879
                 </a>
               </p>
               <p>
                 Email:{' '}
-                <a href="mailto:info@highendconstructions.ca" className="underline">
+                <a
+                  className="underline"
+                  href="mailto:info@highendconstructions.ca"
+                >
                   info@highendconstructions.ca
                 </a>
               </p>
             </div>
           </div>
-          <div>
+
+          <div className="md:pt-8">
             <a
               href="mailto:info@highendconstructions.ca"
-              className="inline-block bg-amber-500 hover:bg-amber-600 transition px-8 py-3 rounded-lg text-zinc-900 font-semibold"
+              className="inline-block rounded-lg bg-amber-500 px-8 py-3 font-semibold text-zinc-900 transition hover:bg-amber-600"
             >
               Free Consultation
             </a>
           </div>
         </div>
-        <p className="text-center text-sm text-zinc-500 mt-8">
+
+        <p className="mt-8 text-center text-sm text-zinc-500">
           © 2025 High End Constructions. All rights reserved.
         </p>
       </footer>
