@@ -34,7 +34,7 @@ export default function HomePage() {
             href="mailto:info@highendconstructions.ca"
             className="inline-block bg-black text-white px-10 py-4 rounded-lg text-lg hover:bg-zinc-800 transition"
           >
-            Book My Free Consultation
+            Get Free Quote
           </a>
         </div>
       </header>
