@@ -3,12 +3,12 @@ import Link from 'next/link';
 import { Menu, X, ChevronDown } from 'lucide-react';
 
 export default function Navbar() {
-  const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false); // <-- FIX for mobile submenu
+  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
+  const [isServicesHovered, setIsServicesHovered] = useState(false); // desktop hover fix
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-transparent/30 backdrop-blur-md
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white
                     text-black flex items-center justify-between
                     py-1 px-6 text-sm tracking-wider font-semibold shadow-md">
 
@@ -28,21 +28,25 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Nav Links (Desktop) */}
+      {/* Desktop Navigation */}
       <div className="hidden md:flex space-x-8 items-center relative">
         <Link href="/" className="hover:text-amber-400">HOME</Link>
         <Link href="/about" className="hover:text-amber-400">ABOUT US</Link>
 
-        {/* Services Dropdown */}
-        <div 
+        {/* Desktop SERVICES Dropdown with Hover Fix */}
+        <div
           className="relative"
-          onMouseEnter={() => setIsServicesOpen(true)}
-          onMouseLeave={() => setIsServicesOpen(false)}
+          onMouseEnter={() => setIsServicesHovered(true)}
+          onMouseLeave={() => setIsServicesHovered(false)}
         >
           <button className="hover:text-amber-400 flex items-center gap-1">
             SERVICES <ChevronDown size={16} />
           </button>
-          <div className={`absolute top-full mt-2 bg-white w-64 rounded-md shadow-lg z-50 ${isServicesOpen ? 'block' : 'hidden'}`}>
+          <div
+            className={`absolute top-full left-0 mt-2 bg-white w-64 rounded-md shadow-lg z-50 transition-opacity duration-200 ${
+              isServicesHovered ? 'opacity-100 visible' : 'opacity-0 invisible'
+            }`}
+          >
             <Link href="/services/residential" className="block px-4 py-2 text-green-600 hover:bg-amber-100">Residential</Link>
             <Link href="/services/commercial" className="block px-4 py-2 text-green-600 hover:bg-amber-100">Commercial</Link>
             <Link href="/services/custom-furniture" className="block px-4 py-2 text-green-600 hover:bg-amber-100">Custom Furniture & Specialty Builds</Link>
@@ -53,13 +57,13 @@ export default function Navbar() {
         <Link href="/contact" className="hover:text-amber-400">CONTACT US</Link>
       </div>
 
-      {/* Nav Links (Mobile dropdown) */}
+      {/* Mobile Navigation */}
       {isMobileMenuOpen && (
         <div className="absolute top-full left-0 w-full bg-white flex flex-col items-start p-4 space-y-3 md:hidden z-40 shadow-md">
           <Link href="/" className="hover:text-amber-400">HOME</Link>
           <Link href="/about" className="hover:text-amber-400">ABOUT US</Link>
 
-          {/* Toggleable mobile SERVICES */}
+          {/* Mobile SERVICES Dropdown Toggle */}
           <div className="w-full">
             <button
               onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
