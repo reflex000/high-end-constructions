@@ -48,7 +48,7 @@ export default function HomePage() {
       <section className="bg-white py-20">
         <div className="mx-auto max-w-7xl px-4">
           <h2 className="mb-12 text-center text-3xl font-semibold md:text-4xl">
-            Our Core Services
+            Our Services
           </h2>
 
           <div className="grid gap-8 md:grid-cols-3">
@@ -96,7 +96,7 @@ export default function HomePage() {
               className="group relative block h-[400px] overflow-hidden rounded-lg shadow-lg"
             >
               <img
-                src="/images/services/customfurniture.jpg"
+                src="/images/services/custom.jpg"
                 alt="Custom Furniture"
                 className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
               />
