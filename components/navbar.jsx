@@ -1,11 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Link from 'next/link';
 import { Menu, X, ChevronDown } from 'lucide-react';
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
-  const [isServicesHovered, setIsServicesHovered] = useState(false); // desktop hover fix
+  const [isServicesHovered, setIsServicesHovered] = useState(false);
+  const hoverTimeoutRef = useRef(null); // ⬅️ for delay buffer
+
+  // Desktop hover enter/leave buffer handlers
+  const handleMouseEnter = () => {
+    clearTimeout(hoverTimeoutRef.current);
+    setIsServicesHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    hoverTimeoutRef.current = setTimeout(() => {
+      setIsServicesHovered(false);
+    }, 200); // small delay to avoid flicker
+  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white
@@ -33,11 +46,11 @@ export default function Navbar() {
         <Link href="/" className="hover:text-amber-400">HOME</Link>
         <Link href="/about" className="hover:text-amber-400">ABOUT US</Link>
 
-        {/* Desktop SERVICES Dropdown with Hover Fix */}
+        {/* Desktop SERVICES Dropdown with Hover Buffer */}
         <div
           className="relative"
-          onMouseEnter={() => setIsServicesHovered(true)}
-          onMouseLeave={() => setIsServicesHovered(false)}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
         >
           <button className="hover:text-amber-400 flex items-center gap-1">
             SERVICES <ChevronDown size={16} />
