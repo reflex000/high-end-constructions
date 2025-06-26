@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Menu, X } from 'lucide-react'; // Optional: uses Lucide icons
+import { Menu, X, ChevronDown } from 'lucide-react';
 
 export default function Navbar() {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false); // <-- FIX for mobile submenu
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-transparent/30 backdrop-blur-md
@@ -38,14 +39,14 @@ export default function Navbar() {
           onMouseEnter={() => setIsServicesOpen(true)}
           onMouseLeave={() => setIsServicesOpen(false)}
         >
-          <button className="hover:text-amber-400">SERVICES</button>
-          {isServicesOpen && (
-            <div className="absolute bg-white mt-2 w-64 rounded-md shadow-lg z-50">
-              <Link href="/services/residential" className="block px-4 py-2 text-green-600 hover:bg-amber-100">Residential</Link>
-              <Link href="/services/commercial" className="block px-4 py-2 text-green-600 hover:bg-amber-100">Commercial</Link>
-              <Link href="/services/custom-furniture" className="block px-4 py-2 text-green-600 hover:bg-amber-100">Custom Furniture & Specialty Builds</Link>
-            </div>
-          )}
+          <button className="hover:text-amber-400 flex items-center gap-1">
+            SERVICES <ChevronDown size={16} />
+          </button>
+          <div className={`absolute top-full mt-2 bg-white w-64 rounded-md shadow-lg z-50 ${isServicesOpen ? 'block' : 'hidden'}`}>
+            <Link href="/services/residential" className="block px-4 py-2 text-green-600 hover:bg-amber-100">Residential</Link>
+            <Link href="/services/commercial" className="block px-4 py-2 text-green-600 hover:bg-amber-100">Commercial</Link>
+            <Link href="/services/custom-furniture" className="block px-4 py-2 text-green-600 hover:bg-amber-100">Custom Furniture & Specialty Builds</Link>
+          </div>
         </div>
 
         <Link href="/gallery" className="hover:text-amber-400">GALLERY</Link>
@@ -57,12 +58,24 @@ export default function Navbar() {
         <div className="absolute top-full left-0 w-full bg-white flex flex-col items-start p-4 space-y-3 md:hidden z-40 shadow-md">
           <Link href="/" className="hover:text-amber-400">HOME</Link>
           <Link href="/about" className="hover:text-amber-400">ABOUT US</Link>
-          <div>
-            <div className="font-semibold text-gray-800 mt-2">SERVICES</div>
-            <Link href="/services/residential" className="block text-green-600 ml-4 hover:underline">Residential</Link>
-            <Link href="/services/commercial" className="block text-green-600 ml-4 hover:underline">Commercial</Link>
-            <Link href="/services/custom-furniture" className="block text-green-600 ml-4 hover:underline">Custom Furniture</Link>
+
+          {/* Toggleable mobile SERVICES */}
+          <div className="w-full">
+            <button
+              onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+              className="flex justify-between items-center w-full font-semibold text-gray-800"
+            >
+              SERVICES <ChevronDown size={16} className={`transform transition-transform ${isMobileServicesOpen ? 'rotate-180' : ''}`} />
+            </button>
+            {isMobileServicesOpen && (
+              <div className="ml-4 mt-1 space-y-1">
+                <Link href="/services/residential" className="block text-green-600 hover:underline">Residential</Link>
+                <Link href="/services/commercial" className="block text-green-600 hover:underline">Commercial</Link>
+                <Link href="/services/custom-furniture" className="block text-green-600 hover:underline">Custom Furniture</Link>
+              </div>
+            )}
           </div>
+
           <Link href="/gallery" className="hover:text-amber-400">GALLERY</Link>
           <Link href="/contact" className="hover:text-amber-400">CONTACT US</Link>
         </div>
