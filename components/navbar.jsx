@@ -23,20 +23,17 @@ export default function Navbar() {
         <Link href="/" className="hover:text-amber-400">HOME</Link>
         <Link href="/about" className="hover:text-amber-400">ABOUT US</Link>
 
-        {/* Dropdown for Services */}
+        {/* Services Dropdown */}
         <div 
-          className="relative"
-          onMouseEnter={() => setIsServicesOpen(true)}
-          onMouseLeave={() => setIsServicesOpen(false)}
+          className="relative group"
         >
           <button className="hover:text-amber-400">SERVICES</button>
-          {isServicesOpen && (
-            <div className="absolute top-full mt-2 w-64 bg-white shadow-lg rounded-md z-50">
-              <Link href="/services/residential" className="block px-4 py-2 hover:bg-amber-100">Residential</Link>
-              <Link href="/services/commercial" className="block px-4 py-2 hover:bg-amber-100">Commercial</Link>
-              <Link href="/services/custom-furniture" className="block px-4 py-2 hover:bg-amber-100">Custom Furniture & Specialty Builds</Link>
-            </div>
-          )}
+          
+          <div className="absolute hidden group-hover:block bg-white mt-2 w-64 rounded-md shadow-lg z-50">
+            <Link href="/services/residential" className="block px-4 py-2 text-green-600 hover:bg-amber-100">Residential</Link>
+            <Link href="/services/commercial" className="block px-4 py-2 text-green-600 hover:bg-amber-100">Commercial</Link>
+            <Link href="/services/custom-furniture" className="block px-4 py-2 text-green-600 hover:bg-amber-100">Custom Furniture & Specialty Builds</Link>
+          </div>
         </div>
 
         <Link href="/gallery" className="hover:text-amber-400">GALLERY</Link>
