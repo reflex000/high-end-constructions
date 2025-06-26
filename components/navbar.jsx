@@ -13,7 +13,7 @@ export default function Navbar() {
                     py-1 px-6 text-sm tracking-wider font-semibold shadow-md">
 
       {/* Logo */}
-      <div className="flex items-center ml-14">
+      <div className="flex items-center ml-6">
         <img 
           src="/logo1.png" 
           alt="High End Constructions Logo" 
