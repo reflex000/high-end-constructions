@@ -72,7 +72,7 @@ export default function HomePage() {
         {/* Image */}
         <div className="md:w-1/2">
           <img
-            src="/images/services/sketch.png"  /*  <-- drop sketch image in /public/images */
+            src="/images/sketch.png"  /*  <-- drop sketch image in /public/images */
             alt="Architectural Sketch"
             className="w-full max-w-md mx-auto drop-shadow-md"
           />
