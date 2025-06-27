@@ -41,23 +41,43 @@ export default function HomePage() {
         </div>
       </header>
 
-      {/* ───────────── ABOUT US INTRO ───────────── */}
-      <section className="bg-white py-16">
-        <div className="mx-auto max-w-4xl text-center px-6">
-          <img
-            src="/images/about-icon.png"
-            alt="About Icon"
-            className="mx-auto mb-4 w-20"
-          />
-          <h2 className="text-3xl font-semibold mb-4">Who We Are</h2>
-          <p className="text-lg text-zinc-700">
-            High End Constructions Ltd. is a Surrey-based full-service construction company
-            known for quality, craftsmanship, and transparency. Whether it's a custom home,
-            tenant improvement, or luxury renovation—we deliver excellence from blueprint
-            to final walk-through. Our in-house trades and licensed subcontractors are
-            equipped to handle everything from design to execution, backed by our
-            satisfaction guarantee.
+      {/* ───────────── ABOUT US SECTION ───────────── */}
+      <section
+        id="about"
+        className="w-full bg-white py-16 px-6 md:px-16 lg:px-24 flex flex-col-reverse md:flex-row items-center justify-between gap-12"
+      >
+        {/* Left: Text */}
+        <div className="md:w-1/2 text-center md:text-left">
+          <p className="text-lg text-gray-700 max-w-xl mx-auto md:mx-0">
+            High End Constructions Ltd. is a full-service construction and
+            renovation company serving homeowners across British Columbia. With a
+            passion for precision and decades of combined experience, we bring
+            visions to life — from site prep and structural framing to luxury
+            finishes and smart home features.
           </p>
+
+          <h2 className="text-2xl md:text-3xl font-bold text-black mt-6 leading-relaxed">
+            <span className="text-red-600 font-semibold">Our success</span> is
+            rooted in a commitment to exceptional craftsmanship and a love for
+            what we do. Every member of our team takes pride in creating
+            residential spaces that reflect the personality and lifestyle of
+            each client.
+          </h2>
+
+          <p className="text-gray-700 mt-6 max-w-xl mx-auto md:mx-0">
+            At High End Constructions, we believe your home should be as unique
+            as you are — and we’re here to help you build it, renovate it, and
+            elevate it.
+          </p>
+        </div>
+
+        {/* Right: Image */}
+        <div className="md:w-1/2">
+          <img
+            src="/images/sketch.png"
+            alt="Architectural Sketch"
+            className="w-full max-w-md mx-auto drop-shadow-md"
+          />
         </div>
       </section>
 
