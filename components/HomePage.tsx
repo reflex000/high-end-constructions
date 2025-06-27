@@ -55,12 +55,14 @@ export default function HomePage() {
 
             <h3 className="text-2xl md:text-3xl font-bold text-black mt-6 leading-relaxed">
               <span className="text-red-600 font-semibold">Our success</span> is rooted in a
-              commitment to exceptional craftsmanship and a love for what we do.
+              commitment to exceptional craftsmanship and a love for what we do.Every member of our
+              team takes pride in creating residential spaces that reflect the personality and
+              lifestyle of each client.
             </h3>
 
             <p className="text-gray-700 mt-6 max-w-xl mx-auto md:mx-0">
-              Your home should be as unique as you are — and we’re here to help you build it,
-              renovate it, and elevate it.
+              At High End Constructions, we believe your home should be as unique as you are — and
+              we’re here to help you build it, renovate it, and elevate it.
             </p>
 
             {/* ───────────── What Sets Us Apart ───────────── */}
