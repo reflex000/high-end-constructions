@@ -74,7 +74,7 @@ export default function HomePage() {
         {/* Right: Image */}
         <div className="md:w-1/2">
           <img
-            src="/images/sketch.jpg"
+            src="/images/sketch.png"
             alt="Architectural Sketch"
             className="w-full max-w-md mx-auto drop-shadow-md"
           />
