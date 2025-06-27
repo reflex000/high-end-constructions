@@ -105,7 +105,7 @@ export default function HomePage() {
           <div className="grid gap-8 md:grid-cols-3">
             {[
               { title: 'Residential', link: '/services/Residential', img: 'residential.jpg' },
-              { title: 'Commercial', link: '/services/Commercial', img: 'commercial.jpg' },
+              { title: 'Commercial', link: '/services/commercial', img: 'commercial.jpg' },
               { title: 'Custom Furniture', link: '/services/custom-furniture', img: 'custom.jpg' },
             ].map(({ title, link, img }) => (
               <a
