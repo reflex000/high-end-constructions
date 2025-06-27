@@ -25,13 +25,11 @@ export default function HomePage() {
           <h1 className="shimmer-effect relative mb-6 text-4xl font-extrabold leading-tight text-black drop-shadow md:text-6xl">
             Building Excellence from Blueprint to Finish.
           </h1>
-
           <p className="mb-8 text-xl text-white md:text-2xl">
             At <strong>High End Constructions</strong> we deliver everything from
             leak-proof plumbing to luxury renovations—on time, on budget, and
             without compromise.
           </p>
-
           <a
             href="mailto:info@highendconstructions.ca"
             className="inline-block rounded-lg bg-black px-10 py-4 text-lg text-white transition hover:bg-zinc-800"
@@ -48,6 +46,10 @@ export default function HomePage() {
       >
         {/* Left: Text */}
         <div className="md:w-1/2 text-center md:text-left">
+          <h2 className="mb-6 text-3xl font-semibold text-black md:text-4xl text-center md:text-left">
+            About Us
+          </h2>
+
           <p className="text-lg text-gray-700 max-w-xl mx-auto md:mx-0">
             High End Constructions Ltd. is a full-service construction and
             renovation company serving homeowners across British Columbia. With a
@@ -74,7 +76,7 @@ export default function HomePage() {
         {/* Right: Image */}
         <div className="md:w-1/2">
           <img
-            src="/images/sketch.png"
+            src="/images/sketch.jpg"
             alt="Architectural Sketch"
             className="w-full max-w-md mx-auto drop-shadow-md"
           />
@@ -89,7 +91,7 @@ export default function HomePage() {
           </h2>
 
           <div className="grid gap-8 md:grid-cols-3">
-            {/* ── Residential ── */}
+            {/* Residential */}
             <a
               href="/services/residential"
               className="group relative block h-[400px] overflow-hidden rounded-lg shadow-lg"
@@ -108,7 +110,7 @@ export default function HomePage() {
               </div>
             </a>
 
-            {/* ── Commercial ── */}
+            {/* Commercial */}
             <a
               href="/services/commercial"
               className="group relative block h-[400px] overflow-hidden rounded-lg shadow-lg"
@@ -127,7 +129,7 @@ export default function HomePage() {
               </div>
             </a>
 
-            {/* ── Custom Furniture ── */}
+            {/* Custom Furniture */}
             <a
               href="/services/custom-furniture"
               className="group relative block h-[400px] overflow-hidden rounded-lg shadow-lg"
