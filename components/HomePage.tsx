@@ -1,6 +1,7 @@
 /* pages/HomePage.tsx */
 import React from 'react';
 import Navbar from '../components/navbar';
+import { CheckCircle } from 'lucide-react'; // Using lucide icons
 
 export default function HomePage() {
   return (
@@ -26,9 +27,8 @@ export default function HomePage() {
             Building Excellence from Blueprint to Finish.
           </h1>
           <p className="mb-8 text-xl text-white md:text-2xl">
-            At <strong>High End Constructions</strong> we deliver everything from
-            leak-proof plumbing to luxury renovations—on time, on budget, and
-            without compromise.
+            At <strong>High End Constructions</strong>, we deliver everything from
+            leak-proof plumbing to luxury renovations—on time, on budget, and without compromise.
           </p>
           <a
             href="mailto:info@highendconstructions.ca"
@@ -39,116 +39,92 @@ export default function HomePage() {
         </div>
       </header>
 
-      {/* ───────────── ABOUT US SECTION ───────────── */}
-      <section
-        id="about"
-        className="w-full bg-white py-16 px-6 md:px-16 lg:px-24 flex flex-col-reverse md:flex-row items-center justify-between gap-12"
-      >
-        {/* Left: Text */}
-        <div className="md:w-1/2 text-center md:text-left">
-          <h2 className="mb-6 text-3xl font-semibold text-black md:text-4xl text-center md:text-left">
-            About Us
-          </h2>
+      {/* ───────────── ABOUT US ───────────── */}
+      <section id="about" className="bg-white py-20 px-6 md:px-16 lg:px-24">
+        <h2 className="mb-12 text-center text-3xl font-semibold md:text-4xl">About Us</h2>
 
-          <p className="text-lg text-gray-700 max-w-xl mx-auto md:mx-0">
-            High End Constructions Ltd. is a full-service construction and
-            renovation company serving homeowners across British Columbia. With a
-            passion for precision and decades of combined experience, we bring
-            visions to life — from site prep and structural framing to luxury
-            finishes and smart home features.
-          </p>
+        <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+          {/* Left: Text */}
+          <div className="md:w-1/2 text-center md:text-left">
+            <p className="text-lg text-gray-700 max-w-xl mx-auto md:mx-0">
+              High End Constructions Ltd. is a full-service construction and renovation company
+              serving homeowners across British Columbia. With a passion for precision and decades
+              of combined experience, we bring visions to life — from site prep and structural
+              framing to luxury finishes and smart home features.
+            </p>
 
-          <h2 className="text-2xl md:text-3xl font-bold text-black mt-6 leading-relaxed">
-            <span className="text-red-600 font-semibold">Our success</span> is
-            rooted in a commitment to exceptional craftsmanship and a love for
-            what we do. Every member of our team takes pride in creating
-            residential spaces that reflect the personality and lifestyle of
-            each client.
-          </h2>
+            <h3 className="text-2xl md:text-3xl font-bold text-black mt-6 leading-relaxed">
+              <span className="text-red-600 font-semibold">Our success</span> is rooted in a
+              commitment to exceptional craftsmanship and a love for what we do.
+            </h3>
 
-          <p className="text-gray-700 mt-6 max-w-xl mx-auto md:mx-0">
-            At High End Constructions, we believe your home should be as unique
-            as you are — and we’re here to help you build it, renovate it, and
-            elevate it.
-          </p>
-        </div>
+            <p className="text-gray-700 mt-6 max-w-xl mx-auto md:mx-0">
+              Your home should be as unique as you are — and we’re here to help you build it,
+              renovate it, and elevate it.
+            </p>
 
-        {/* Right: Image */}
-        <div className="md:w-1/2">
-          <img
-            src="/images/sketch.jpg"
-            alt="Architectural Sketch"
-            className="w-full max-w-md mx-auto drop-shadow-md"
-          />
+            {/* ───────────── What Sets Us Apart ───────────── */}
+            <div className="mt-8 space-y-4 text-left">
+              <h4 className="text-xl font-semibold mb-3">🛠 What Sets Us Apart:</h4>
+              {[
+                'Fully licensed & insured professionals across all trades',
+                'Transparent project management and client communication',
+                'Custom design-build solutions tailored to your needs',
+                'Dedicated to quality, safety, and long-term durability',
+                'Proven experience in both residential and commercial construction',
+              ].map((item, index) => (
+                <div
+                  key={index}
+                  className="flex items-start gap-3 opacity-0 animate-fadeIn animation-delay"
+                  style={{ animationDelay: `${index * 0.3}s`, animationFillMode: 'forwards' }}
+                >
+                  <CheckCircle className="text-green-600 mt-1" size={20} />
+                  <span className="text-gray-800">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Right: Image */}
+          <div className="md:w-1/2">
+            <img
+              src="/images/sketch.png"
+              alt="Architectural Sketch"
+              className="w-full max-w-md mx-auto drop-shadow-md"
+            />
+          </div>
         </div>
       </section>
 
-      {/* ───────────── CORE SERVICES ───────────── */}
+      {/* ───────────── SERVICES ───────────── */}
       <section className="bg-white py-20">
         <div className="mx-auto max-w-7xl px-4">
-          <h2 className="mb-12 text-center text-3xl font-semibold md:text-4xl">
-            Our Services
-          </h2>
-
+          <h2 className="mb-12 text-center text-3xl font-semibold md:text-4xl">Our Services</h2>
           <div className="grid gap-8 md:grid-cols-3">
-            {/* Residential */}
-            <a
-              href="/services/residential"
-              className="group relative block h-[400px] overflow-hidden rounded-lg shadow-lg"
-            >
-              <img
-                src="/images/services/residential.jpg"
-                alt="Residential"
-                className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black/50" />
-              <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center text-white">
-                <h3 className="mb-4 text-3xl font-bold">Residential</h3>
-                <span className="border-2 border-white px-5 py-2 font-semibold transition hover:bg-white hover:text-black">
-                  Explore
-                </span>
-              </div>
-            </a>
-
-            {/* Commercial */}
-            <a
-              href="/services/commercial"
-              className="group relative block h-[400px] overflow-hidden rounded-lg shadow-lg"
-            >
-              <img
-                src="/images/services/commercial.jpg"
-                alt="Commercial"
-                className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black/50" />
-              <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center text-white">
-                <h3 className="mb-4 text-3xl font-bold">Commercial</h3>
-                <span className="border-2 border-white px-5 py-2 font-semibold transition hover:bg-white hover:text-black">
-                  Explore
-                </span>
-              </div>
-            </a>
-
-            {/* Custom Furniture */}
-            <a
-              href="/services/custom-furniture"
-              className="group relative block h-[400px] overflow-hidden rounded-lg shadow-lg"
-            >
-              <img
-                src="/images/services/custom.jpg"
-                alt="Custom Furniture"
-                className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black/50" />
-              <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center text-white">
-                <h3 className="mb-4 px-3 text-2xl font-bold leading-snug">
-                  Custom Furniture&nbsp;&amp;&nbsp;Specialty Builds
-                </h3>
-                <span className="border-2 border-white px-5 py-2 font-semibold transition hover:bg-white hover:text-black">
-                  Explore
-                </span>
-              </div>
-            </a>
+            {[
+              { title: 'Residential', link: '/services/residential', img: 'residential.jpg' },
+              { title: 'Commercial', link: '/services/commercial', img: 'commercial.jpg' },
+              { title: 'Custom Furniture', link: '/services/custom-furniture', img: 'custom.jpg' },
+            ].map(({ title, link, img }) => (
+              <a
+                key={title}
+                href={link}
+                className="group relative block h-[400px] overflow-hidden rounded-lg shadow-lg"
+              >
+                <img
+                  src={`/images/services/${img}`}
+                  alt={title}
+                  className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-black/50" />
+                <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center text-white">
+                  <h3 className="mb-4 text-3xl font-bold">{title}</h3>
+                  <span className="border-2 border-white px-5 py-2 font-semibold transition hover:bg-white hover:text-black">
+                    Explore
+                  </span>
+                </div>
+              </a>
+            ))}
           </div>
         </div>
       </section>
@@ -156,21 +132,19 @@ export default function HomePage() {
       {/* ───────────── TESTIMONIALS ───────────── */}
       <section id="testimonials" className="bg-zinc-200 py-16">
         <div className="mx-auto max-w-5xl px-6">
-          <h2 className="mb-10 text-center text-3xl font-semibold">
-            What Clients Say
-          </h2>
+          <h2 className="mb-10 text-center text-3xl font-semibold">What Clients Say</h2>
           <div className="grid gap-8 md:grid-cols-2">
             <blockquote className="rounded bg-white p-6 shadow">
               <p className="mb-4 italic">
-                “Their drywall and paint crews finished four days early, and the
-                quality was magazine-worthy. I won’t hire anyone else.”
+                “Their drywall and paint crews finished four days early, and the quality was magazine-worthy.
+                I won’t hire anyone else.”
               </p>
               <footer className="font-semibold">— Lisa T., Burnaby</footer>
             </blockquote>
             <blockquote className="rounded bg-white p-6 shadow">
               <p className="mb-4 italic">
-                “A leaking main line almost shut our café. High End fixed the
-                plumbing overnight and resurfaced the floor before opening.”
+                “A leaking main line almost shut our café. High End fixed the plumbing overnight
+                and resurfaced the floor before opening.”
               </p>
               <footer className="font-semibold">— Sid, New Westminster</footer>
             </blockquote>
@@ -207,9 +181,7 @@ export default function HomePage() {
         <div className="mx-auto flex max-w-6xl flex-col gap-6 px-6 text-center md:flex-row md:items-start md:justify-between md:text-left">
           <div>
             <img src="/logo.png" alt="High End Constructions Logo" className="mx-auto w-40 md:mx-0" />
-            <h3 className="mb-2 text-xl font-bold text-white">
-              High End Constructions Ltd.
-            </h3>
+            <h3 className="mb-2 text-xl font-bold text-white">High End Constructions Ltd.</h3>
             <p>
               Unit&nbsp;105 · 8028 128 Street<br />
               Surrey, BC V3W 4E9
