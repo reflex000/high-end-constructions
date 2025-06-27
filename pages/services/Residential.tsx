@@ -98,10 +98,10 @@ export default function Residential() {
       </section>
 
       {/* ───────────── FOOTER ───────────── */}
-      <footer className="bg-zinc-900 py-10 text-zinc-200">
+      <footer className="bg-zinc-900 py-6 text-zinc-200">
         <div className="mx-auto flex max-w-6xl flex-col gap-6 px-6 text-center md:flex-row md:items-start md:justify-between md:text-left">
           <div>
-            <img src="/logo.png" alt="High End Constructions Logo" className="mx-auto w-40 md:mx-0" />
+            <img src="/logo.png" alt="High End Constructions Logo" className="mx-auto w-40 md:mx-0 brightness-200" />
             <h3 className="mb-2 text-xl font-bold text-white">High End Constructions Ltd.</h3>
             <p>
               Unit&nbsp;105 · 8028 128 Street<br />
