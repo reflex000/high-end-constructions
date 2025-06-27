@@ -104,7 +104,7 @@ export default function HomePage() {
           <h2 className="mb-12 text-center text-3xl font-semibold md:text-4xl">Our Services</h2>
           <div className="grid gap-8 md:grid-cols-3">
             {[
-              { title: 'Residential', link: '/services/residential', img: 'residential.jpg' },
+              { title: 'Residential', link: '/services/Residential', img: 'residential.jpg' },
               { title: 'Commercial', link: '/services/commercial', img: 'commercial.jpg' },
               { title: 'Custom Furniture', link: '/services/custom-furniture', img: 'custom.jpg' },
             ].map(({ title, link, img }) => (
