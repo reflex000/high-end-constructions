@@ -67,7 +67,7 @@ export default function Navbar() {
         </div>
 
         <Link href="/gallery" className="hover:text-amber-400">GALLERY</Link>
-        <Link href="/contact" className="hover:text-amber-400">CONTACT US</Link>
+        <Link href="/contact-us" className="hover:text-amber-400">CONTACT US</Link>
       </div>
 
       {/* Mobile Navigation */}
