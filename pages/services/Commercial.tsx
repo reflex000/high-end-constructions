@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from '../../components/navbar';
-import { Building, Tools, Shield, Users, Wrench, Warehouse, Store, Truck, Monitor, Lock, ClipboardList, HardHat, Brush, DoorOpen, ArrowUp, Layers, Ruler, Square, Bolt, Flame, FileCheck } from 'lucide-react';
+import Navbar from '../../components/Navbar';
+import { Building, Tools, Shield, Users, Wrench, Warehouse, Store, Truck, Monitor, Lock, ClipboardList, HardHat, ArrowUp, Layers, Ruler, Square, Bolt, Flame, FileCheck } from 'lucide-react';
 
 export default function Commercial() {
   return (
