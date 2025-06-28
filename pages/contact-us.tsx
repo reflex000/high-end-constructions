@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function ContactUs() {
   return (
-    <div className="relative min-h-screen text-white font-sans">
+    <div className="relative min-h-screen text-white font-sans pt-32">
       {/* Background Image */}
       <img
         src="https://images.pexels.com/photos/209251/pexels-photo-209251.jpeg"
@@ -11,8 +11,10 @@ export default function ContactUs() {
       />
 
       {/* Content */}
-      <div className="relative z-10 max-w-4xl mx-auto px-6 py-20">
-        <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">Get in touch with High End Constructions</h1>
+      <div className="relative z-10 max-w-4xl mx-auto px-6 py-16 md:py-20">
+        <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">
+          Get in Touch with High End Constructions
+        </h1>
 
         <div className="bg-white/90 text-black rounded-lg shadow-lg p-8">
           <form className="grid gap-6">
@@ -36,6 +38,16 @@ export default function ContactUs() {
               Submit
             </button>
           </form>
+
+          {/* Open WhatsApp Button */}
+          <a
+            href="https://wa.me/16049025879"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 inline-flex items-center justify-center w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded font-semibold transition"
+          >
+            Open WhatsApp Chat
+          </a>
         </div>
 
         {/* Contact Info */}
