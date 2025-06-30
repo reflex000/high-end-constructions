@@ -1,6 +1,8 @@
 import React from 'react';
-import Navbar from '../../components/Navbar';
-import { Building, Tools, Shield, Users, Wrench, Warehouse, Store, Truck, Monitor, Lock, ClipboardList, HardHat, ArrowUp, Layers, Ruler, Square, Bolt, Flame, FileCheck } from 'lucide-react';
+import Navbar from '../../components/navbar';
+import {
+  Building, PenTool, Shield, Users, Wrench, Warehouse, Store, Truck, Monitor, Lock, ClipboardList, HardHat, ArrowUp, Layers, Ruler, Square, Bolt, Flame, FileCheck
+} from 'lucide-react';
 
 export default function Commercial() {
   return (
@@ -37,7 +39,7 @@ export default function Commercial() {
       <section className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-6 pb-20">
         {[
           { label: 'Retail Stores & Showrooms', icon: <Store className="text-red-600 w-6 h-6" /> },
-          { label: 'Restaurants & Commercial Kitchens', icon: <Tools className="text-red-600 w-6 h-6" /> },
+          { label: 'Restaurants & Commercial Kitchens', icon: <PenTool className="text-red-600 w-6 h-6" /> },
           { label: 'Medical & Dental Offices', icon: <Shield className="text-red-600 w-6 h-6" /> },
           { label: 'Warehouses & Distribution Centers', icon: <Warehouse className="text-red-600 w-6 h-6" /> },
           { label: 'Office Renovations & Tenant Improvements', icon: <ClipboardList className="text-red-600 w-6 h-6" /> },
@@ -54,7 +56,7 @@ export default function Commercial() {
           { label: 'Steel Erection & Metal Framing', icon: <Square className="text-red-600 w-6 h-6" /> },
           { label: 'Access Flooring & Raised Systems', icon: <Ruler className="text-red-600 w-6 h-6" /> },
           { label: 'HVAC & Mechanical Systems', icon: <Bolt className="text-red-600 w-6 h-6" /> },
-          { label: 'Commercial Kitchen Equipment', icon: <Tools className="text-red-600 w-6 h-6" /> },
+          { label: 'Commercial Kitchen Equipment', icon: <PenTool className="text-red-600 w-6 h-6" /> },
           { label: 'As-Built Surveys & Testing', icon: <FileCheck className="text-red-600 w-6 h-6" /> },
         ].map((service, idx) => (
           <div key={idx} className="flex items-center gap-3 text-lg bg-zinc-50 p-4 rounded shadow hover:shadow-lg transition">
