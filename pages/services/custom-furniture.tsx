@@ -7,7 +7,7 @@ export default function CustomFurniture() {
       <Navbar />
 
       {/* ───────────── HERO SECTION ───────────── */}
-      <section className="relative pt-32 pb-20 text-center text-white bg-cover bg-center" style={{ backgroundImage: "url('/images/custom.jpg')" }}>
+      <section className="relative pt-32 pb-20 text-center text-white bg-cover bg-center" style={{ backgroundImage: "url('/images/custom-furniture.jpg')" }}>
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="relative z-10 max-w-4xl mx-auto px-6">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
