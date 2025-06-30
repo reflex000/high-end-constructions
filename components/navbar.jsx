@@ -6,9 +6,9 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
   const [isServicesHovered, setIsServicesHovered] = useState(false);
-  const hoverTimeoutRef = useRef(null); // ⬅️ for delay buffer
+  const hoverTimeoutRef = useRef(null); // for hover buffer
 
-  // Desktop hover enter/leave buffer handlers
+  // Desktop hover enter/leave handlers
   const handleMouseEnter = () => {
     clearTimeout(hoverTimeoutRef.current);
     setIsServicesHovered(true);
@@ -17,7 +17,7 @@ export default function Navbar() {
   const handleMouseLeave = () => {
     hoverTimeoutRef.current = setTimeout(() => {
       setIsServicesHovered(false);
-    }, 200); // small delay to avoid flicker
+    }, 200); // delay to prevent flicker
   };
 
   return (
@@ -44,9 +44,9 @@ export default function Navbar() {
       {/* Desktop Navigation */}
       <div className="hidden md:flex space-x-8 items-center relative">
         <Link href="/" className="hover:text-amber-400">HOME</Link>
-        <Link href="#about" className="hover:text-amber-400">ABOUT US</Link>
+        <Link href="/about" className="hover:text-amber-400">ABOUT US</Link>
 
-        {/* Desktop SERVICES Dropdown with Hover Buffer */}
+        {/* SERVICES Dropdown (Desktop) */}
         <div
           className="relative"
           onMouseEnter={handleMouseEnter}
@@ -67,7 +67,7 @@ export default function Navbar() {
         </div>
 
         <Link href="/gallery" className="hover:text-amber-400">GALLERY</Link>
-        <Link href="/contact-us" className="hover:text-amber-400">CONTACT US</Link>
+        <Link href="/contact" className="hover:text-amber-400">CONTACT US</Link>
       </div>
 
       {/* Mobile Navigation */}
@@ -76,7 +76,7 @@ export default function Navbar() {
           <Link href="/" className="hover:text-amber-400">HOME</Link>
           <Link href="/about" className="hover:text-amber-400">ABOUT US</Link>
 
-          {/* Mobile SERVICES Dropdown Toggle */}
+          {/* SERVICES Dropdown (Mobile) */}
           <div className="w-full">
             <button
               onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}

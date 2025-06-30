@@ -10,11 +10,11 @@ export default function Commercial() {
       <Navbar />
 
       {/* ───────────── HERO SECTION ───────────── */}
-      <section className="relative pt-32 pb-20 text-center text-white bg-cover bg-center" style={{ backgroundImage: "url('/images/services/commercial-hero.jpg')" }}>
+      <section className="relative pt-32 pb-20 text-center text-white bg-cover bg-center" style={{ backgroundImage: "url('/images/commercial.jpg')" }}>
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="relative z-10 max-w-4xl mx-auto px-6">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-6">
-            🏢 Commercial Construction & Maintenance
+            🏢 <br className="hidden md:inline" />Commercial Construction & Maintenance
           </h1>
           <p className="text-xl md:text-2xl mb-8">
             Building Your Business Success — One Project at a Time
