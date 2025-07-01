@@ -62,7 +62,7 @@ export default function CustomFurniture() {
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Space?</h2>
         <p className="mb-6 text-lg">Contact our craftsmen today for a free consultation and start bringing your unique ideas to life.</p>
         <a
-          href="mailto:info@highendconstructions.ca"
+          href="/contact"
           className="inline-block rounded-lg bg-white text-red-600 px-8 py-3 font-semibold transition hover:bg-zinc-200"
         >
           Schedule Your Free Quote
