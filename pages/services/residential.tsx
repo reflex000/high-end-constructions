@@ -21,7 +21,7 @@ export default function Residential() {
             Bringing Your Dream Home to Life — One Detail at a Time
           </p>
           <a
-            href="mailto:info@highendconstructions.ca"
+            href="/contact"
             className="inline-block rounded-lg bg-red-600 px-10 py-4 text-lg font-semibold text-white transition hover:bg-red-700"
           >
             Book a Free Consultation
@@ -93,7 +93,7 @@ export default function Residential() {
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Home?</h2>
         <p className="mb-6 text-lg">Contact us today for a free consultation and let’s bring your vision to life.</p>
         <a
-          href="mailto:info@highendconstructions.ca"
+          href="/contact"
           className="inline-block rounded-lg bg-white text-red-600 px-8 py-3 font-semibold transition hover:bg-zinc-200"
         >
           Book Your Free Quote
@@ -121,7 +121,7 @@ export default function Residential() {
           </div>
           <div className="self-center md:self-start">
             <a
-              href="mailto:info@highendconstructions.ca"
+              href="/contact"
               className="inline-block rounded-lg bg-amber-500 px-8 py-3 font-semibold text-zinc-900 transition hover:bg-amber-600"
             >
               Free Consultation

@@ -17,7 +17,7 @@ export default function CustomFurniture() {
             Bespoke Designs. Masterful Craftsmanship. Spaces that Inspire.
           </p>
           <a
-            href="mailto:info@highendconstructions.ca"
+            href="/contact"
             className="inline-block rounded-lg bg-red-600 px-10 py-4 text-lg font-semibold text-white transition hover:bg-red-700"
           >
             Schedule Your Free Quote
@@ -109,9 +109,9 @@ export default function CustomFurniture() {
               </p>
             </div>
           </div>
-          <div className="self-center md:self-start">
+          <div className="mt-6 text-center md:text-left">
             <a
-              href="mailto:info@highendconstructions.ca"
+              href="/contact"
               className="inline-block rounded-lg bg-amber-500 px-8 py-3 font-semibold text-zinc-900 transition hover:bg-amber-600"
             >
               Free Consultation

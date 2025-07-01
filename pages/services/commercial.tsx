@@ -20,7 +20,7 @@ export default function Commercial() {
             Building Your Business Success — One Project at a Time
           </p>
           <a
-            href="mailto:info@highendconstructions.ca"
+            href="/contact"
             className="inline-block rounded-lg bg-red-600 px-10 py-4 text-lg font-semibold text-white transition hover:bg-red-700"
           >
             Schedule Your Consultation
@@ -92,7 +92,7 @@ export default function Commercial() {
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Start Your Commercial Project?</h2>
         <p className="mb-6 text-lg">Contact our experienced team for a free consultation — let’s bring your vision to life.</p>
         <a
-          href="mailto:info@highendconstructions.ca"
+          href="/contact"
           className="inline-block rounded-lg bg-white text-red-600 px-8 py-3 font-semibold transition hover:bg-zinc-200"
         >
           Schedule Your Free Quote
@@ -120,7 +120,7 @@ export default function Commercial() {
           </div>
           <div className="self-center md:self-start">
             <a
-              href="mailto:info@highendconstructions.ca"
+              href="/contact"
               className="inline-block rounded-lg bg-amber-500 px-8 py-3 font-semibold text-zinc-900 transition hover:bg-amber-600"
             >
               Free Consultation
