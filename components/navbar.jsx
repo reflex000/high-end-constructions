@@ -44,7 +44,7 @@ export default function Navbar() {
       {/* Desktop Navigation */}
       <div className="hidden md:flex space-x-8 items-center relative">
         <Link href="/" className="hover:text-amber-400">HOME</Link>
-        <Link href="/about" className="hover:text-amber-400">ABOUT US</Link>
+        <Link href="/#about" className="hover:text-amber-400">ABOUT US</Link>
 
         {/* SERVICES Dropdown (Desktop) */}
         <div
@@ -74,7 +74,7 @@ export default function Navbar() {
       {isMobileMenuOpen && (
         <div className="absolute top-full left-0 w-full bg-white flex flex-col items-start p-4 space-y-3 md:hidden z-40 shadow-md">
           <Link href="/" className="hover:text-amber-400">HOME</Link>
-          <Link href="/about" className="hover:text-amber-400">ABOUT US</Link>
+          <Link href="/#about" className="hover:text-amber-400">ABOUT US</Link>
 
           {/* SERVICES Dropdown (Mobile) */}
           <div className="w-full">
