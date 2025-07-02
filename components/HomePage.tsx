@@ -5,7 +5,7 @@ import { CheckCircle } from 'lucide-react';
 
 export default function HomePage() {
   return (
-    <div className="font-sans text-zinc-900 bg-zinc-100">
+    <div className="font-sans text-zinc-900 bg-zinc-100 relative">
       {/* ───────────── NAVBAR ───────────── */}
       <Navbar />
 
@@ -27,8 +27,7 @@ export default function HomePage() {
             Building Excellence from Blueprint to Finish.
           </h1>
           <p className="mb-8 text-xl text-white md:text-2xl">
-            At <strong>High End Constructions</strong>, we deliver everything from
-            leak-proof plumbing to luxury renovations—on time, on budget, and without compromise.
+            At <strong>High End Constructions</strong>, we deliver everything from leak-proof plumbing to luxury renovations — on time, on budget, and without compromise.
           </p>
           <a
             href="mailto:info@highendconstructions.ca"
@@ -42,26 +41,16 @@ export default function HomePage() {
       {/* ───────────── ABOUT US ───────────── */}
       <section id="about" className="bg-white py-20 px-6 md:px-16 lg:px-24">
         <h2 className="mb-12 text-center text-3xl font-semibold md:text-4xl">About Us</h2>
-
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-12">
           <div className="md:w-1/2 text-center md:text-left">
             <p className="text-lg text-gray-700 max-w-xl mx-auto md:mx-0">
-              High End Constructions Ltd. is a full-service construction and renovation company
-              serving homeowners across British Columbia. With a passion for precision and decades
-              of combined experience, we bring visions to life — from site prep and structural
-              framing to luxury finishes and smart home features.
+              High End Constructions Ltd. is a full-service construction and renovation company serving homeowners across British Columbia. With a passion for precision and decades of combined experience, we bring visions to life — from site prep and structural framing to luxury finishes and smart home features.
             </p>
-
             <h3 className="text-2xl md:text-3xl font-bold text-black mt-6 leading-relaxed">
-              <span className="text-red-600 font-semibold">Our success</span> is rooted in a
-              commitment to exceptional craftsmanship and a love for what we do. Every member of our
-              team takes pride in creating residential spaces that reflect the personality and
-              lifestyle of each client.
+              <span className="text-red-600 font-semibold">Our success</span> is rooted in a commitment to exceptional craftsmanship and a love for what we do. Every member of our team takes pride in creating residential spaces that reflect the personality and lifestyle of each client.
             </h3>
-
             <p className="text-gray-700 mt-6 max-w-xl mx-auto md:mx-0">
-              At High End Constructions, we believe your home should be as unique as you are — and
-              we’re here to help you build it, renovate it, and elevate it.
+              At High End Constructions, we believe your home should be as unique as you are — and we’re here to help you build it, renovate it, and elevate it.
             </p>
 
             <div className="mt-8 space-y-4 text-left">
@@ -135,15 +124,13 @@ export default function HomePage() {
           <div className="grid gap-8 md:grid-cols-2">
             <blockquote className="rounded bg-white p-6 shadow">
               <p className="mb-4 italic">
-                “Their drywall and paint crews finished four days early, and the quality was magazine-worthy.
-                I won’t hire anyone else.”
+                “Their drywall and paint crews finished four days early, and the quality was magazine-worthy. I won’t hire anyone else.”
               </p>
               <footer className="font-semibold">— Lisa T., Burnaby</footer>
             </blockquote>
             <blockquote className="rounded bg-white p-6 shadow">
               <p className="mb-4 italic">
-                “A leaking main line almost shut our café. High End fixed the plumbing overnight
-                and resurfaced the floor before opening.”
+                “A leaking main line almost shut our café. High End fixed the plumbing overnight and resurfaced the floor before opening.”
               </p>
               <footer className="font-semibold">— Sid, New Westminster</footer>
             </blockquote>
@@ -157,7 +144,7 @@ export default function HomePage() {
           <div className="flex flex-wrap items-center justify-center gap-6 text-zinc-600">
             <span className="text-xl font-semibold">4.9★ Google (120+ reviews)</span>
             <span className="hidden h-6 w-px bg-zinc-300 sm:block" />
-            <span className="text-xl font-semibold">Licensed &amp; Insured · BC #7485632</span>
+            <span className="text-xl font-semibold">Licensed & Insured</span>
             <span className="hidden h-6 w-px bg-zinc-300 sm:block" />
             <span className="text-xl font-semibold">Member — Vancouver Home Builders Assoc.</span>
           </div>
@@ -167,50 +154,51 @@ export default function HomePage() {
       {/* ───────────── GUARANTEE ───────────── */}
       <section className="bg-zinc-100 py-16">
         <div className="mx-auto max-w-4xl px-6 text-center">
-          <h2 className="mb-4 text-3xl font-semibold">100 % Satisfaction Promise</h2>
+          <h2 className="mb-4 text-3xl font-semibold">100% Satisfaction Promise</h2>
           <p className="text-lg">
-            If any aspect of our workmanship fails within 2 years,&nbsp;we’ll fix it&nbsp;
-            <strong>free of charge—no questions asked.</strong>
+            If any aspect of our workmanship fails within 2 years,&nbsp;<strong>we’ll fix it free of charge—no questions asked.</strong>
           </p>
         </div>
       </section>
 
       {/* ───────────── FOOTER ───────────── */}
-      <footer className="bg-zinc-900 py-4 text-zinc-200">
-        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-6 text-center md:text-left">
-          <div>
-            <img src="/logo.png" alt="High End Constructions Logo" className="mx-auto w-40 md:mx-0" />
-            <h3 className="mb-2 text-xl font-bold text-white">High End Constructions Ltd.</h3>
-            <p>
-              Unit&nbsp;105 · 8028 128 Street<br />
-              Surrey, BC V3W 4E9
-            </p>
-            <div className="mt-2 space-y-1">
-              <p>
-                Call/Text:&nbsp;
-                <a className="underline" href="tel:+16049025879">
-                  +1 (604) 902-5879
-                </a>
-              </p>
-              <p>
-                Email:&nbsp;
-                <a className="underline" href="mailto:info@highendconstructions.ca">
-                  info@highendconstructions.ca
-                </a>
-              </p>
+      <footer className="relative bg-zinc-900 py-8 text-zinc-200">
+        <div className="mx-auto max-w-6xl flex flex-col md:flex-row md:items-center md:justify-start gap-8 px-6">
+          <div className="flex flex-col md:flex-row items-start gap-6 w-full md:w-auto">
+            <img src="/logo.png" alt="High End Constructions Logo" className="w-40 brightness-200" />
+            <div>
+              <h3 className="mb-2 text-xl font-bold text-white">High End Constructions Ltd.</h3>
+              <p>Unit 105 · 8028 128 Street<br />Surrey, BC V3W 4E9</p>
+              <div className="mt-2 space-y-1">
+                <p>Call/Text: <a className="underline" href="tel:+16049025879">+1 (604) 902-5879</a></p>
+                <p>Email: <a className="underline" href="mailto:info@highendconstructions.ca">info@highendconstructions.ca</a></p>
+              </div>
             </div>
+          </div>
 
-            <div className="mt-4 text-center md:text-center">
-              <a
-                href="/contact"
-                className="inline-block rounded-lg bg-amber-500 px-8 py-3 font-semibold text-zinc-900 transition hover:bg-amber-600"
-              >
-                Free Consultation
-              </a>
+          <div className="flex flex-col items-center md:items-start md:justify-center gap-6">
+            <a
+              href="/contact"
+              className="inline-block rounded-lg bg-amber-500 px-8 py-3 font-semibold text-zinc-900 transition hover:bg-amber-600"
+            >
+              Free Consultation
+            </a>
+
+            <div className="absolute bottom-4 right-6 text-right">
+              <h3 className="mb-2 text-2xl font-bold text-yellow-400 tracking-widest">SOCIAL</h3>
+              <div className="flex items-center justify-center md:justify-end gap-4">
+                <a href="https://www.facebook.com/profile.php?id=100063819044966" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-black transition hover:bg-red-600 hover:text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" className="w-6 h-6" fill="currentColor"><path d="M279.14 288l14.22-92.66h-88.91V127.41c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S261.11 0 225.36 0c-73.22 0-121.09 44.38-121.09 124.72v70.62H22.89V288h81.38v224h100.17V288z"/></svg>
+                </a>
+                <a href="https://instagram.com/he_constructions_?igsh=aXpuNXBscXV0czJj" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-black transition hover:bg-red-600 hover:text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className="w-6 h-6" fill="currentColor"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9S160.5 370.8 224.1 370.8 339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.2 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.5 74.7-74.7 74.7z"/></svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <p className="mt-2 text-center text-sm text-zinc-500">
+
+        <p className="mt-4 text-center text-sm text-zinc-500">
           © 2025 High End Constructions. All rights reserved.
         </p>
       </footer>
