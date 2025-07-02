@@ -186,7 +186,7 @@ export default function HomePage() {
 
             <div className="absolute bottom-4 right-6 text-right">
               <h3 className="mb-2 text-2xl font-bold text-yellow-400 tracking-widest">SOCIAL</h3>
-              <div className="flex items-center justify-center md:justify-end gap-4">
+              <div className="flex items-center gap-4">
                 <a href="https://www.facebook.com/profile.php?id=100063819044966" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-black transition hover:bg-red-600 hover:text-white">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" className="w-6 h-6" fill="currentColor"><path d="M279.14 288l14.22-92.66h-88.91V127.41c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S261.11 0 225.36 0c-73.22 0-121.09 44.38-121.09 124.72v70.62H22.89V288h81.38v224h100.17V288z"/></svg>
                 </a>
