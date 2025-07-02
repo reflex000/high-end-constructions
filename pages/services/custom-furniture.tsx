@@ -90,37 +90,63 @@ export default function CustomFurniture() {
         </div>
       </section>
 
-      {/* ───────────── FOOTER ───────────── */}
-      <footer className="bg-zinc-900 py-6 text-zinc-200">
-        <div className="mx-auto flex max-w-6xl flex-col gap-6 px-6 text-center md:flex-row md:items-start md:justify-between md:text-left">
+      {/* ───────────── NEW FOOTER ───────────── */}
+      <footer className="bg-zinc-900 text-zinc-200 pt-12">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <img src="/logo.png" alt="High End Constructions Logo" className="mx-auto w-40 md:mx-0 brightness-200" />
-            <h3 className="mb-2 text-xl font-bold text-white">High End Constructions Ltd.</h3>
-            <p>
-              Unit&nbsp;105 · 8028 128 Street<br />
-              Surrey, BC V3W 4E9
+            <img src="/logo.png" alt="High End Constructions Logo" className="w-40 mb-4 brightness-200" />
+            <h3 className="text-xl font-bold text-white mb-2">High End Constructions Ltd.</h3>
+            <p className="text-sm text-zinc-400">
+              Building excellence from blueprint to finish. Specializing in residential and commercial renovations with a passion for quality and precision.
             </p>
-            <div className="mt-4 space-y-1">
-              <p>
-                Call/Text:&nbsp;<a className="underline" href="tel:+16049025879">+1 (604) 902-5879</a>
-              </p>
-              <p>
-                Email:&nbsp;<a className="underline" href="mailto:info@highendconstructions.ca">info@highendconstructions.ca</a>
-              </p>
+            <div className="flex gap-2 mt-4">
+              <img src="/images/worksafebc.jpg" alt="WorkSafeBC" className="h-8" />
+              <img src="/images/hba.jpg" alt="Home Builders Association" className="h-8" />
             </div>
           </div>
-          <div className="mt-6 text-center md:text-left">
-            <a
-              href="/contact"
-              className="inline-block rounded-lg bg-amber-500 px-8 py-3 font-semibold text-zinc-900 transition hover:bg-amber-600"
-            >
-              Free Consultation
-            </a>
+
+          <div>
+            <h4 className="text-lg font-bold mb-3">Service Areas</h4>
+            <ul className="space-y-1 text-sm text-zinc-400">
+              <li>Surrey</li>
+              <li>Burnaby</li>
+              <li>Langley</li>
+              <li>Vancouver</li>
+              <li>Richmond</li>
+              <li>New Westminster</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-lg font-bold mb-3">Contact Us</h4>
+            <ul className="space-y-2 text-sm text-zinc-400">
+              <li>📞 <a href="tel:+16049025879" className="underline">+1 (604) 902-5879</a></li>
+              <li>✉️ <a href="mailto:info@highendconstructions.ca" className="underline">info@highendconstructions.ca</a></li>
+              <li className="mt-2">
+                Unit 105 · 8028 128 Street<br/>Surrey, BC V3W 4E9
+              </li>
+            </ul>
+          </div>
+
+          <div className="text-center md:text-left">
+            <h4 className="text-lg font-bold mb-3">Follow Us</h4>
+            <div className="flex justify-center md:justify-start gap-4 mb-4">
+              <a href="https://www.facebook.com/profile.php?id=100063819044966" target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-black hover:bg-red-600 hover:text-white transition">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" className="w-5 h-5" fill="currentColor"><path d="M279.14 288l14.22-92.66h-88.91V127.41c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S261.11 0 225.36 0c-73.22 0-121.09 44.38-121.09 124.72v70.62H22.89V288h81.38v224h100.17V288z"/></svg>
+              </a>
+              <a href="https://instagram.com/he_constructions_?igsh=aXpuNXBscXV0czJj" target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-black hover:bg-red-600 hover:text-white transition">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className="w-5 h-5" fill="currentColor"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9S160.5 370.8 224.1 370.8 339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.2 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.5 74.7-74.7 74.7z"/></svg>
+              </a>
+            </div>
+            <a href="/blog" className="underline text-sm text-zinc-400 hover:text-white">Our Blog</a>
           </div>
         </div>
-        <p className="mt-8 text-center text-sm text-zinc-500">
-          © 2025 High End Constructions. All rights reserved.
-        </p>
+
+        <div className="mt-8 bg-red-700 py-4">
+          <p className="text-center text-sm text-zinc-100">
+            © 2025 High End Constructions Ltd. All rights reserved. Privacy Policy | Web Design by X!phos
+          </p>
+        </div>
       </footer>
     </div>
   );
