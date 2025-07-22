@@ -194,8 +194,8 @@ export default function HomePage() {
           <div>
             <h4 className="text-lg font-bold mb-3">Contact Us</h4>
             <ul className="space-y-2 text-sm text-zinc-400">
-              <li>📞 <a href="tel:+16049025879" className="underline">+1 (604) 902-5879</a></li>
-              <li>✉️ <a href="mailto:info@highendconstructions.ca" className="underline">info@highendconstructions.ca</a></li>
+              <li>📞 <a href="tel:+16047820777" className="underline">+1 (604) 782-0777</a></li>
+              <li>✉️ <a href="mailto:mandeepbassi0011@gmail.com" className="underline">info@highendconstructions.ca</a></li>
               <li className="mt-2">
                 Unit 105 · 8028 128 Street<br/>Surrey, BC V3W 4E9
               </li>
