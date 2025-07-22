@@ -97,7 +97,7 @@ export default function Residential() {
       <footer className="bg-zinc-900 text-zinc-200 pt-12">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <img src="/akfwale.png" alt="AKF Wale Constructions Logo" className="w-40 mb-4 brightness-200" />
+            <img src="/akfwale.png" alt="AKF Wale Constructions Logo" className="w-40 mb-4 brightness-100" />
             <h3 className="text-xl font-bold text-white mb-2">AKF Wale Constructions Ltd.</h3>
             <p className="text-sm text-zinc-400">
               Building excellence from blueprint to finish. Specializing in residential and commercial renovations with a passion for quality and precision.
@@ -137,7 +137,7 @@ export default function Residential() {
               <a href="https://www.facebook.com/profile.php?id=100063819044966" target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-black hover:bg-red-600 hover:text-white transition">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" className="w-5 h-5" fill="currentColor"><path d="M279.14 288l14.22-92.66h-88.91V127.41c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S261.11 0 225.36 0c-73.22 0-121.09 44.38-121.09 124.72v70.62H22.89V288h81.38v224h100.17V288z"/></svg>
               </a>
-              <a href="https://instagram.com/he_constructions_?igsh=aXpuNXBscXV0czJj" target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-black hover:bg-red-600 hover:text-white transition">
+              <a href="https://www.instagram.com/akf_wale_construction_ltd?igsh=MW5xOXB2ZG9waWh0" target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-black hover:bg-red-600 hover:text-white transition">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className="w-5 h-5" fill="currentColor"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9S160.5 370.8 224.1 370.8 339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.2 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.5 74.7-74.7 74.7z"/></svg>
               </a>
             </div>
