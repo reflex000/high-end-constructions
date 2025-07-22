@@ -32,33 +32,26 @@ export default function Residential() {
       {/* ───────────── INTRO SECTION ───────────── */}
       <section className="py-16 px-6 md:px-16 lg:px-24 text-center">
         <p className="max-w-4xl mx-auto text-lg text-gray-700 mb-6">
-          At <span className="text-red-700 font-bold">High End Constructions Ltd.</span>, we specialize in full-scope residential services — from <strong className="text-red-600">site prep</strong> and <strong className="text-red-600">structural framing</strong> to <strong className="text-red-600">luxury finishes</strong>, <strong className="text-red-600">smart home systems</strong>, and <strong className="text-red-600">custom millwork</strong>. Our licensed experts ensure unmatched quality — <em>on time and on budget</em>.
+          At <span className="text-red-700 font-bold">AKF Wale Constructions Ltd.</span>,we provide full-service construction and renovation <strong className="text-red-600">serving homeowners across British Columbia.</strong> With a focus on craftsmanship and reliability, <strong className="text-red-600">we specialize in tiles, drywall, taping, framing, glass doors, roofing, and custom kitchen cabinetry</strong>  — turning your ideas into beautifully built reality. Our licensed experts ensure unmatched quality — <em>on time and on budget</em>.
         </p>
       </section>
 
       {/* ───────────── SERVICES GRID ───────────── */}
       <section className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-6 pb-20">
         {[
-          { label: 'Full Home Construction', icon: <Home className="text-red-600 w-6 h-6" /> },
           { label: 'Bathroom Renovations', icon: <Bath className="text-red-600 w-6 h-6" /> },
           { label: 'Kitchen Makeovers', icon: <Wrench className="text-red-600 w-6 h-6" /> },
           { label: 'Basement Finishing', icon: <Paintbrush className="text-red-600 w-6 h-6" /> },
           { label: 'Custom Closets & Storage', icon: <DoorOpen className="text-red-600 w-6 h-6" /> },
-          { label: 'Smart Home Integration', icon: <Lightbulb className="text-red-600 w-6 h-6" /> },
-          { label: 'Energy-Efficient Upgrades', icon: <Lightbulb className="text-red-600 w-6 h-6" /> },
           { label: 'Framing & Structural Repairs', icon: <Hammer className="text-red-600 w-6 h-6" /> },
           { label: 'Interior Painting', icon: <Paintbrush className="text-red-600 w-6 h-6" /> },
           { label: 'Flooring Installation (Hardwood, Tile, etc.)', icon: <LayoutTemplate className="text-red-600 w-6 h-6" /> },
           { label: 'Garage Additions', icon: <Home className="text-red-600 w-6 h-6" /> },
-          { label: 'Custom Decks & Patios', icon: <Ruler className="text-red-600 w-6 h-6" /> },
           { label: 'Window & Door Installation', icon: <DoorOpen className="text-red-600 w-6 h-6" /> },
           { label: 'Insulation & Drywall', icon: <Hammer className="text-red-600 w-6 h-6" /> },
           { label: 'Exterior Siding & Trim', icon: <Paintbrush className="text-red-600 w-6 h-6" /> },
-          { label: 'Custom Millwork', icon: <Sofa className="text-red-600 w-6 h-6" /> },
-          { label: 'Luxury Finish Carpentry', icon: <Hammer className="text-red-600 w-6 h-6" /> },
           { label: 'Plumbing & Electrical Work', icon: <Wrench className="text-red-600 w-6 h-6" /> },
           { label: 'Roofing & Attic Renovations', icon: <Home className="text-red-600 w-6 h-6" /> },
-          { label: 'Home Office Builds', icon: <LayoutTemplate className="text-red-600 w-6 h-6" /> },
         ].map((service, idx) => (
           <div key={idx} className="flex items-center gap-3 text-lg bg-zinc-50 p-4 rounded shadow hover:shadow-lg transition">
             {service.icon}
@@ -74,7 +67,7 @@ export default function Residential() {
           <div className="grid gap-8 md:grid-cols-2">
             <blockquote className="rounded bg-white p-6 shadow">
               <p className="mb-4 italic text-gray-700">
-                “Our kitchen and bathrooms turned out better than we imagined! High End Constructions guided us through every step.”
+                “Our kitchen and bathrooms turned out better than we imagined! AKF Wale Constructions Ltd guided us through every step.”
               </p>
               <footer className="font-semibold text-gray-900">— Emily & Mark, Vancouver</footer>
             </blockquote>
@@ -104,8 +97,8 @@ export default function Residential() {
       <footer className="bg-zinc-900 text-zinc-200 pt-12">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <img src="/logo.png" alt="High End Constructions Logo" className="w-40 mb-4 brightness-200" />
-            <h3 className="text-xl font-bold text-white mb-2">High End Constructions Ltd.</h3>
+            <img src="/akfwale.png" alt="AKF Wale Constructions Logo" className="w-40 mb-4 brightness-200" />
+            <h3 className="text-xl font-bold text-white mb-2">AKF Wale Constructions Ltd.</h3>
             <p className="text-sm text-zinc-400">
               Building excellence from blueprint to finish. Specializing in residential and commercial renovations with a passion for quality and precision.
             </p>
@@ -130,8 +123,8 @@ export default function Residential() {
           <div>
             <h4 className="text-lg font-bold mb-3">Contact Us</h4>
             <ul className="space-y-2 text-sm text-zinc-400">
-              <li>📞 <a href="tel:+16049025879" className="underline">+1 (604) 902-5879</a></li>
-              <li>✉️ <a href="mailto:info@highendconstructions.ca" className="underline">info@highendconstructions.ca</a></li>
+              <li>📞 <a href="tel:+16047820777" className="underline">+1 (604) 782-0777</a></li>
+              <li>✉️ <a href="mailto:mandeepbassi0011@gmail.com" className="underline">mandeepbassi0011@gmail.com</a></li>
               <li className="mt-2">
                 Unit 105 · 8028 128 Street<br/>Surrey, BC V3W 4E9
               </li>
@@ -154,7 +147,7 @@ export default function Residential() {
 
         <div className="mt-8 bg-red-700 py-4">
           <p className="text-center text-sm text-zinc-100">
-            © 2025 High End Constructions Ltd. All rights reserved. Privacy Policy | Web Design by X!phos
+            © 2025 AKF Wale Constructions Ltd. All rights reserved. Privacy Policy | Web Design by X!phos
           </p>
         </div>
       </footer>

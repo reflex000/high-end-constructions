@@ -28,8 +28,8 @@ export default function Navbar() {
       {/* Logo */}
       <div className="flex items-center ml-6">
         <img 
-          src="/logo1.png" 
-          alt="High End Constructions Logo" 
+          src="/akfwale.png" 
+          alt="AKF Wale Constructions Ltd Logo" 
           className="w-40 h-40 mt-2"
         />
       </div>
@@ -62,7 +62,7 @@ export default function Navbar() {
           >
             <Link href="/services/residential" className="block px-4 py-2 text-green-600 hover:bg-amber-100">Residential</Link>
             <Link href="/services/commercial" className="block px-4 py-2 text-green-600 hover:bg-amber-100">Commercial</Link>
-            <Link href="/services/custom-furniture" className="block px-4 py-2 text-green-600 hover:bg-amber-100">Custom Furniture & Specialty Builds</Link>
+            <Link href="/services/custom" className="block px-4 py-2 text-green-600 hover:bg-amber-100">Custom</Link>
           </div>
         </div>
 
@@ -88,7 +88,7 @@ export default function Navbar() {
               <div className="ml-4 mt-1 space-y-1">
                 <Link href="/services/residential" className="block text-green-600 hover:underline">Residential</Link>
                 <Link href="/services/commercial" className="block text-green-600 hover:underline">Commercial</Link>
-                <Link href="/services/custom-furniture" className="block text-green-600 hover:underline">Custom Furniture</Link>
+                <Link href="/services/custom" className="block text-green-600 hover:underline">Custom</Link>
               </div>
             )}
           </div>

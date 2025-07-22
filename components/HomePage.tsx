@@ -27,10 +27,10 @@ export default function HomePage() {
             Building Excellence from Blueprint to Finish.
           </h1>
           <p className="mb-8 text-xl text-white md:text-2xl">
-            At <strong>High End Constructions</strong>, we deliver everything from leak-proof plumbing to luxury renovations — on time, on budget, and without compromise.
+            At <strong>AKF Wale Constructions Ltd</strong>, we deliver everything from precise tile work to full-scale renovations — on time, on budget, and with unmatched attention to detail.
           </p>
           <a
-            href="mailto:info@highendconstructions.ca"
+            href="mailto:imandeepbassi0011@gmail.com"
             className="inline-block rounded-lg bg-black px-10 py-4 text-lg text-white transition hover:bg-zinc-800"
           >
             Get Free Quote
@@ -44,13 +44,13 @@ export default function HomePage() {
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-12">
           <div className="md:w-1/2 text-center md:text-left">
             <p className="text-lg text-gray-700 max-w-xl mx-auto md:mx-0">
-              High End Constructions Ltd. is a full-service construction and renovation company serving homeowners across British Columbia. With a passion for precision and decades of combined experience, we bring visions to life — from site prep and structural framing to luxury finishes and smart home features.
+              AKF Wale Constructions Ltd is a full-service construction and renovation company serving homeowners across British Columbia. With a focus on craftsmanship and reliability, we specialize in tiles, drywall, taping, framing, glass doors, roofing, and custom kitchen cabinetry — turning your ideas into beautifully built reality.
             </p>
             <h3 className="text-2xl md:text-3xl font-bold text-black mt-6 leading-relaxed">
               <span className="text-red-600 font-semibold">Our success</span> is rooted in a commitment to exceptional craftsmanship and a love for what we do. Every member of our team takes pride in creating residential spaces that reflect the personality and lifestyle of each client.
             </h3>
             <p className="text-gray-700 mt-6 max-w-xl mx-auto md:mx-0">
-              At High End Constructions, we believe your home should be as unique as you are — and we’re here to help you build it, renovate it, and elevate it.
+              At AKF Wale Constructions, we believe your home should be as unique as you are — and we’re here to help you build it, renovate it, and elevate it.
             </p>
 
             <div className="mt-8 space-y-4 text-left">
@@ -166,7 +166,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <img src="/logo.png" alt="High End Constructions Logo" className="w-40 mb-4 brightness-200" />
+            <img src="/akfwale.png" alt="AKF Wale Constructions Ltd Logo" className="w-40 mb-4 brightness-200" />
             <h3 className="text-xl font-bold text-white mb-2">High End Constructions Ltd.</h3>
             <p className="text-sm text-zinc-400">
               Building excellence from blueprint to finish. Specializing in residential and commercial renovations with a passion for quality and precision.
@@ -219,7 +219,7 @@ export default function HomePage() {
 
         <div className="mt-8 bg-red-700 py-4">
           <p className="text-center text-sm text-zinc-100">
-            © 2025 High End Constructions Ltd. All rights reserved. Privacy Policy | Web Design by X!phos
+            © 2025 AKF Wale Constructions Ltd. All rights reserved. Privacy Policy | Web Design by X!phos
           </p>
         </div>
       </footer>
