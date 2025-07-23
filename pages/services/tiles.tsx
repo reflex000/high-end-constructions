@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../../components/navbar';
-import { Star } from 'lucide-react';
+import { Carousel, CarouselItem } from '../../components/carousel';
 
 export default function TilesPage() {
   return (
@@ -29,7 +29,7 @@ export default function TilesPage() {
         </div>
       </section>
 
-      {/* ───────────── TILE TYPES (GENERIC) ───────────── */}
+      {/* ───────────── TILE TYPES ───────────── */}
       <section className="py-16 px-6 md:px-16 lg:px-24 text-center">
         <h2 className="text-3xl font-bold mb-6 text-red-600">We Handle All Major Tile Types</h2>
         <p className="max-w-3xl mx-auto text-lg text-gray-700 mb-10">
@@ -63,43 +63,54 @@ export default function TilesPage() {
         </div>
       </section>
 
-      {/* ───────────── OVERLAY QUOTE ───────────── */}
-      <section className="bg-black text-white py-12 text-center">
-        <h2 className="text-3xl md:text-4xl font-semibold">
-          From Luxury Bathrooms to Stylish Kitchens, <br />
-          <span className="text-red-500">Our Tilework Speaks for Itself</span>
-        </h2>
-      </section>
-
       {/* ───────────── CLIENT PROJECT SHOWCASE ───────────── */}
       <section className="py-16 px-6 md:px-16 lg:px-24 text-center">
         <h2 className="text-3xl font-bold mb-10">Real Results</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
-            '1.jpg',
-            '2.jpg',
-            '3.jpg',
-            '5.jpg',
-            '6.jpg',
-            '7.jpg',
-            '8.jpg',
+            '1.jpg', '2.jpg', '3.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg',
           ].map((img, idx) => (
-            <div key={idx} className="rounded overflow-hidden shadow">
+            <a
+              key={idx}
+              href={`/images/services/${img}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded overflow-hidden shadow block"
+            >
               <img
                 src={`/images/services/${img}`}
                 alt={`Project ${idx + 1}`}
-                className="h-60 w-full object-cover"
+                className="h-60 w-full object-cover hover:opacity-90 transition"
               />
-              <div className="bg-white p-4">
-                <div className="flex justify-center mb-2 text-yellow-400">
-                  {Array(5).fill(0).map((_, i) => (
-                    <Star key={i} size={18} fill="currentColor" />
-                  ))}
-                </div>
-                <p className="text-gray-700 text-sm">“Amazing finish and detail — highly recommended!”</p>
-              </div>
-            </div>
+            </a>
           ))}
+        </div>
+      </section>
+
+      {/* ───────────── TESTIMONIAL CAROUSEL ───────────── */}
+      <section className="bg-zinc-100 py-16">
+        <h2 className="text-3xl font-bold text-center mb-10">What Our Clients Say</h2>
+        <div className="max-w-3xl mx-auto px-6">
+          <Carousel>
+            <CarouselItem>
+              <blockquote className="text-center text-lg italic text-zinc-700">
+                “AKF Wale Constructions delivered clean, professional work on time. Our bathroom looks luxurious now.”
+                <footer className="mt-4 text-sm font-semibold text-zinc-900">— Harjit S., Langley</footer>
+              </blockquote>
+            </CarouselItem>
+            <CarouselItem>
+              <blockquote className="text-center text-lg italic text-zinc-700">
+                “Their attention to detail and tile finishing is next level. Highly recommended.”
+                <footer className="mt-4 text-sm font-semibold text-zinc-900">— Simran K., Surrey</footer>
+              </blockquote>
+            </CarouselItem>
+            <CarouselItem>
+              <blockquote className="text-center text-lg italic text-zinc-700">
+                “Very responsive, professional, and reliable team. Will call them again for my kitchen tiles.”
+                <footer className="mt-4 text-sm font-semibold text-zinc-900">— Amrit B., Vancouver</footer>
+              </blockquote>
+            </CarouselItem>
+          </Carousel>
         </div>
       </section>
 
@@ -149,7 +160,7 @@ export default function TilesPage() {
               <a href="https://www.facebook.com/profile.php?id=100063819044966" target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-black hover:bg-red-600 hover:text-white transition">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" className="w-5 h-5" fill="currentColor"><path d="..."/></svg>
               </a>
-              <a href="https://www.instagram.com/akf_wale_construction_ltd?igsh=..." target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-black hover:bg-red-600 hover:text-white transition">
+              <a href="https://www.instagram.com/akf_wale_construction_ltd" target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-black hover:bg-red-600 hover:text-white transition">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className="w-5 h-5" fill="currentColor"><path d="..."/></svg>
               </a>
             </div>
