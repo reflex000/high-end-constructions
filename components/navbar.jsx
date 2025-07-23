@@ -28,7 +28,7 @@ export default function Navbar() {
       {/* Logo */}
       <div className="flex items-center ml-6">
         <img 
-          src="/akfwale.png" 
+          src="/akfwale1.png" 
           alt="AKF Wale Constructions Ltd Logo" 
           className="w-40 h-40 mt-2"
         />

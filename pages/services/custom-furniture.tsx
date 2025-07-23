@@ -28,7 +28,7 @@ export default function CustomFurniture() {
       {/* ───────────── INTRO SECTION ───────────── */}
       <section className="py-16 px-6 md:px-16 lg:px-24 text-center">
         <p className="max-w-5xl mx-auto text-lg text-gray-700 mb-6">
-          At <span className="text-red-700 font-bold">High End Constructions Ltd.</span>, we craft unique, custom-designed features to elevate both residential and commercial spaces. From handcrafted furniture to immersive entertainment zones, our skilled artisans bring your vision to life with unmatched craftsmanship and detail.
+          At <span className="text-red-700 font-bold">AKF Wale Constructions Ltd.</span>, we craft unique, custom-designed features to elevate both residential and commercial spaces. From handcrafted furniture to immersive entertainment zones, our skilled artisans bring your vision to life with unmatched craftsmanship and detail.
         </p>
 
         <div className="grid gap-8 md:grid-cols-2 text-left mt-10">
@@ -94,7 +94,7 @@ export default function CustomFurniture() {
       <footer className="bg-zinc-900 text-zinc-200 pt-12">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <img src="/logo.png" alt="High End Constructions Logo" className="w-40 mb-4 brightness-200" />
+            <img src="/akfwale.png" alt="AKF Wale Constructions Logo" className="w-40 mb-4 brightness-200" />
             <h3 className="text-xl font-bold text-white mb-2">High End Constructions Ltd.</h3>
             <p className="text-sm text-zinc-400">
               Building excellence from blueprint to finish. Specializing in residential and commercial renovations with a passion for quality and precision.
@@ -144,7 +144,7 @@ export default function CustomFurniture() {
 
         <div className="mt-8 bg-red-700 py-4">
           <p className="text-center text-sm text-zinc-100">
-            © 2025 High End Constructions Ltd. All rights reserved. Privacy Policy | Web Design by X!phos
+            © 2025 AKF Wale Constructions Ltd. All rights reserved. Privacy Policy | Web Design by X!phos
           </p>
         </div>
       </footer>

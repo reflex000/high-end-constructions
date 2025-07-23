@@ -90,9 +90,12 @@ export default function HomePage() {
           <h2 className="mb-12 text-center text-3xl font-semibold md:text-4xl">Our Services</h2>
           <div className="grid gap-8 md:grid-cols-3">
             {[
-              { title: 'Residential', link: '/services/residential', img: 'residential.jpg' },
-              { title: 'Commercial', link: '/services/commercial', img: 'commercial.jpg' },
-              { title: 'Custom Furniture', link: '/services/custom-furniture', img: 'custom.jpg' },
+              { title: 'Tiles', link: '/services/tiles', img: 'tiles.jpg' },
+              { title: 'Drywall', link: '/services/drywall', img: 'drywall.jpg' },
+              { title: 'Glass Doors', link: '/services/glassdoors', img: 'glassdoors.jpg' },
+              { title: 'Framing', link: '/services/framing', img: 'framing.jpg' },
+              { title: 'Roofing', link: '/services/roofing', img: 'roofing.jpg' },
+              { title: 'Kitchen Cabinets', link: '/services/kitchencabinets', img: 'kitchencabinets.jpg' },
             ].map(({ title, link, img }) => (
               <a
                 key={title}
@@ -156,7 +159,8 @@ export default function HomePage() {
         <div className="mx-auto max-w-4xl px-6 text-center">
           <h2 className="mb-4 text-3xl font-semibold">100% Satisfaction Promise</h2>
           <p className="text-lg">
-            If any aspect of our workmanship fails within 2 years,&nbsp;<strong>we’ll fix it free of charge—no questions asked.</strong>
+            If any aspect of our workmanship fails within 2 years,&nbsp;
+            <strong>we’ll fix it free of charge—no questions asked.</strong>
           </p>
         </div>
       </section>
@@ -164,9 +168,8 @@ export default function HomePage() {
       {/* ───────────── NEW FOOTER ───────────── */}
       <footer className="bg-zinc-900 text-zinc-200 pt-12">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Company Info */}
           <div>
-            <img src="/akfwale.png" alt="AKF Wale Constructions Ltd Logo" className="w-40 mb-4 brightness-100" />
+            <img src="/akfwale1.png" alt="AKF Wale Constructions Ltd Logo" className="w-40 mb-4 brightness-100" />
             <h3 className="text-xl font-bold text-white mb-2">AKF Wale Constructions Ltd.</h3>
             <p className="text-sm text-zinc-400">
               Building excellence from blueprint to finish. Specializing in residential and commercial renovations with a passion for quality and precision.
@@ -177,7 +180,6 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Service Areas */}
           <div>
             <h4 className="text-lg font-bold mb-3">Service Areas</h4>
             <ul className="space-y-1 text-sm text-zinc-400">
@@ -190,19 +192,17 @@ export default function HomePage() {
             </ul>
           </div>
 
-          {/* Contact Info */}
           <div>
             <h4 className="text-lg font-bold mb-3">Contact Us</h4>
             <ul className="space-y-2 text-sm text-zinc-400">
               <li>📞 <a href="tel:+16047820777" className="underline">+1 (604) 782-0777</a></li>
-              <li>✉️ <a href="mailto:mandeepbassi0011@gmail.com" className="underline">info@highendconstructions.ca</a></li>
+              <li>✉️ <a href="mailto:mandeepbassi0011@gmail.com" className="underline">mandeepbassi0011@gmail.com</a></li>
               <li className="mt-2">
-                Unit 105 · 8028 128 Street<br/>Surrey, BC V3W 4E9
+                Unit 105 · 8028 128 Street<br />Surrey, BC V3W 4E9
               </li>
             </ul>
           </div>
 
-          {/* Social Links */}
           <div className="text-center md:text-left">
             <h4 className="text-lg font-bold mb-3">Follow Us</h4>
             <div className="flex justify-center md:justify-start gap-4 mb-4">
